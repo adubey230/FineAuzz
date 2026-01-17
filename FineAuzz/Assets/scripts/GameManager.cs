@@ -1,9 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public Transform targetPosition;
-    [SerializeField] GameObject exit1;
+    [SerializeField] GameObject exit;
     void Start()
     {
         
@@ -14,4 +14,6 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+    
 }
