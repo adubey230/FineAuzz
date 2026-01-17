@@ -16,27 +16,25 @@ public class Distraction : MonoBehaviour
     [SerializeField] public Sprite broken;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    public bool canInteract(){
-        return !IsCracked && InRange;
-    }
     
-
-    public void Interact(){
-        if(!canInteract()){
-            return;
+    void Update(){
+        if(Input.GetKeyDown(KeyCode.F)){
+            CrackVase();
         }
-        CrackVase();
     }
 
     private void CrackVase(){
-        IsCracked = true;
-        GetComponent<SpriteRenderer>().sprite = broken;
-        //LookAtDist(transform.position.x,transform.position.y);
-        
+        if(!IsCracked && InRange){
+            Debug.Log("crack");
+            IsCracked = true;
+            GetComponent<SpriteRenderer>().sprite = broken;
+            //LookAtDist(transform.position.x,transform.position.y);
+        }
     }
     
     void OnTriggerEnter2D(Collider2D collider)
-    {
+    {   
+        Debug.Log("enter");
         if(collider.tag == "Range"){
             InRange = true;
         }
