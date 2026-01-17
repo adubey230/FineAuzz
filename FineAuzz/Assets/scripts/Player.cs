@@ -107,6 +107,7 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
+        ResetAnimations();
         animator.SetBool("is_shocked", true);
         inputPossible = false;
         rb.linearVelocity = new Vector2(0, 0);
