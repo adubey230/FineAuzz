@@ -1,9 +1,14 @@
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject exit;
+    [SerializeField] private int timeToReset = 120;
+    private bool startResetTimer = false;
+
+    private string currentScene;
 
     private void OnEnable()
     {
@@ -15,15 +20,23 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        
+        currentScene = SceneManager.GetActiveScene().name;
     }
-    void Update()
+    void FixedUpdate()
     {
-        
+        if (startResetTimer)
+        {
+            timeToReset--;
+        }
+        if (timeToReset < 0)
+        {
+            SceneManager.LoadScene(currentScene);
+        }
     }
 
     private void HandlePlayerCaught(GuardLOS guard)
     {
         Debug.Log("Game Over");
+        startResetTimer = true;
     }
 }
