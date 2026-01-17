@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class GuardLOS : MonoBehaviour
 {
@@ -27,15 +28,18 @@ public class GuardLOS : MonoBehaviour
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
         origin = Vector3.zero;
-        // startingAngle += fov / 2;
+        startingAngle += fov / 2;
+    }
+
+
+    void LateUpdate()
+    {
+        inVision = false;
 
         blinkTimer = blinkTimerVal;
         resetTimer = resetTimerVal;
-    }
 
-    void LateUpdate()
-    {   
-        if(!blinking){
+        if (!blinking){
         int rayCount = 100;
         float angle = startingAngle;
         float angleIncrease = fov / rayCount;
@@ -53,7 +57,13 @@ public class GuardLOS : MonoBehaviour
         for (int i = 0; i <= rayCount; i++)
         {
             Vector3 vertex = origin + GetVectorFromAngle(angle) * viewDistance;
-            RaycastHit2D raycastHit2D = Physics2D.Raycast(transform.position, GetVectorFromAngle(angle), viewDistance, layerMask);
+            // RaycastHit2D raycastHit2D = Physics2D.Raycast(transform.position, GetVectorFromAngle(angle), viewDistance, layerMask);
+
+            Vector3 worldOrigin = transform.TransformPoint(origin);
+            Vector3 worldDir = transform.TransformDirection(GetVectorFromAngle(angle));
+
+            RaycastHit2D raycastHit2D = Physics2D.Raycast(worldOrigin, worldDir, viewDistance, layerMask);
+
             if (raycastHit2D.collider == null)
             {
                 vertex = origin + GetVectorFromAngle(angle) * viewDistance;
@@ -62,12 +72,12 @@ public class GuardLOS : MonoBehaviour
                 if (raycastHit2D.collider.CompareTag(playerTag))
                 {
                     inVision = true;
-                    if (beingDetected == false) StartCoroutine(DetectPlayer());
-                    beingDetected = true;
-                }
-                else
-                {
-                    inVision = false;
+                    if (beingDetected == false)
+                    {
+                        StartCoroutine(DetectPlayer());
+                        beingDetected = true;
+                        Debug.Log(beingDetected);
+                    }
                 }
             }
 
@@ -133,6 +143,7 @@ public class GuardLOS : MonoBehaviour
             if (!inVision)
             {
                 beingDetected = false;
+                Debug.Log(beingDetected);
                 yield break;
             }
         }
