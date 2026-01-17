@@ -69,11 +69,6 @@ public class Player : MonoBehaviour
             animator.SetBool("is_idle", true);
         }
     }
-
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        Debug.Log("yooo");
-    }
     public void Die()
     {
         sprite.sprite = shockedSprite;
