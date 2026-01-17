@@ -3,7 +3,9 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] Animator animator;
     public float speed = 5f;
+    private bool playerIsMoving = false;
     void Start()
     {
 
@@ -18,5 +20,19 @@ public class Player : MonoBehaviour
         Vector3 playerMoves = new Vector3(horizontal, vertical, 0.0f);
 
         transform.Translate(playerMoves * speed * Time.deltaTime);
+
+        if (GetComponent<Rigidbody2D>().linearVelocity.magnitude > 0)
+        {
+            animator.SetBool("is_walk_front", true);
+        }
+        else
+        {
+            animator.SetBool("is_walk_front", false);
+        }
+    }
+
+    private void Animations()
+    {
+       
     }
 }

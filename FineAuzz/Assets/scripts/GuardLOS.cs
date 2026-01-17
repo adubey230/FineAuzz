@@ -50,6 +50,7 @@ public class GuardLOS : MonoBehaviour
                     // - start a coroutine. coroutine checks every frame whether the player is still in vision
                     // - if player leaves vision, coroutine terminates early
                     // - if timer runs out, call a gameover script
+                    Debug.Log("hello");
                 }
             }
 
