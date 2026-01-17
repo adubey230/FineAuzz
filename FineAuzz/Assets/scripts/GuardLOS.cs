@@ -13,7 +13,8 @@ public class GuardLOS : MonoBehaviour
     private float angle;
     private bool inVision = false;
     private bool beingDetected = false;
-
+    [SerializeField, Range(0.0f, 10.0f)] private float blinkTimer;
+    [SerializeField, Range(0.0f, 2.0f)] private float resetTimer;
     [SerializeField, Range(0.0f, 180.0f)] public float fov = 67.5f;
 
     public static event Action<GuardLOS> PlayerDetected;
@@ -80,6 +81,8 @@ public class GuardLOS : MonoBehaviour
         mesh.vertices = vertices;
         mesh.uv = uv;
         mesh.triangles = triangles;
+
+        
     }
 
     public void SetOrigin(Vector3 origin)
