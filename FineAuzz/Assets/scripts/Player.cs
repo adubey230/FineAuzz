@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (inputPossible)
         {
@@ -71,7 +71,8 @@ public class Player : MonoBehaviour
     }
     public void Die()
     {
-        sprite.sprite = shockedSprite;
+        animator.SetBool("is_shocked", true);
         inputPossible = false;
+        rb.linearVelocity = new Vector2(0, 0);
     }
 }
