@@ -7,8 +7,11 @@ public class Player : MonoBehaviour
     [SerializeField] SpriteRenderer sprite;
     public float speed = 5f;
     private bool playerIsMoving = false;
-    private Rigidbody2D rb; 
-    
+    private Rigidbody2D rb;
+
+    bool inputPossible = true;
+
+    [SerializeField] Sprite shockedSprite;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -17,15 +20,18 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        if (inputPossible)
+        {
+            float horizontal = Input.GetAxis("Horizontal");
+            float vertical = Input.GetAxis("Vertical");
 
-        Vector2 movement = new Vector2(horizontal, vertical);
+            Vector2 movement = new Vector2(horizontal, vertical);
 
-        rb.linearVelocity = movement * speed;
+            rb.linearVelocity = movement * speed;
 
-        //animator.SetBool("is_walk_front", movement.magnitude > 0);
-        Animations();
+            //animator.SetBool("is_walk_front", movement.magnitude > 0);
+            Animations();
+        }
     }
 
     private void ResetAnimations()
@@ -65,7 +71,8 @@ public class Player : MonoBehaviour
     }
     public void Die()
     {
-        Debug.Log("Imagine the shocked animation playing right now");
-        this.enabled = false;
+        animator.SetBool("is_shocked", true);
+        speed = 0;
+        inputPossible = false;
     }
 }
