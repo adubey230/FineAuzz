@@ -185,7 +185,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.89941406, y: 6.661589}
+  m_Offset: {x: -0.89941406, y: 6.640162}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -195,7 +195,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 14.003628, y: 2.298171}
+  m_Size: {x: 14.003628, y: 2.3410254}
   m_EdgeRadius: 0
 --- !u!1 &226983088
 GameObject:
@@ -692,7 +692,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 2.6365294, y: 6.9007244}
+  m_Offset: {x: 2.6365294, y: 6.8858404}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -702,7 +702,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 6.9317408, y: 2.5900478}
+  m_Size: {x: 6.9317408, y: 2.6198158}
   m_EdgeRadius: 0
 --- !u!1 &371159107
 GameObject:
@@ -843,8 +843,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.001983063, y: 0.0799632}
-  m_Size: {x: 0.1599264, y: 0.1599264}
+  m_Offset: {x: -0.00025210384, y: 0.053141456}
+  m_Size: {x: 0.12267391, y: 0.12565413}
   m_Direction: 0
 --- !u!61 &371159113
 BoxCollider2D:
@@ -2280,10 +2280,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GuardLOS
   layerMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 9
   playerTag: Player
   detectionTimer: 60
   startingAngle: 0
+  blinkTimer: 0
+  resetTimer: 0
   fov: 44
 --- !u!1 &1783986413
 GameObject:
