@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     {
         currentScene = SceneManager.GetActiveScene().name;
         player = FindFirstObjectByType<Player>();
-        guards = GameObject.FindGameObjectsWithTag("Enemy");;
+        guards = GameObject.FindGameObjectsWithTag("Guard");
     }
 
     void FixedUpdate()
