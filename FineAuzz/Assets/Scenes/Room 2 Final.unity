@@ -831,9 +831,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   animator: {fileID: 268423529}
-  sprite: {fileID: 0}
-  speed: 5
-  shockedSprite: {fileID: 0}
+  sprite: {fileID: 268423524}
+  speed: 3
+  shockedSprite: {fileID: -3924190032742187860, guid: f8c1d3ef027e04dba8bf58b50e860476, type: 3}
 --- !u!114 &371159111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -991,8 +991,8 @@ MonoBehaviour:
   playerTag: Player
   detectionTimer: 60
   startingAngle: 200
-  blinkTimer: 0
-  resetTimer: 0
+  blinkTimerVal: 0
+  resetTimerVal: 0
   fov: 67.5
 --- !u!1 &461717392
 GameObject:
@@ -2692,8 +2692,8 @@ MonoBehaviour:
   playerTag: Player
   detectionTimer: 60
   startingAngle: 96
-  blinkTimer: 0
-  resetTimer: 0
+  blinkTimerVal: 0
+  resetTimerVal: 0
   fov: 67.5
 --- !u!1 &1877442874
 GameObject:
