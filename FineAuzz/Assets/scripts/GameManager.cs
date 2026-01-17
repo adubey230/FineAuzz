@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int timeToReset = 120;
     private bool startResetTimer = false;
 
+    private Player player = FindFirstObjectByType<Player>();
+
     private string currentScene;
 
     private void OnEnable()
@@ -38,5 +40,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Game Over");
         startResetTimer = true;
+        player.Die();
     }
 }
