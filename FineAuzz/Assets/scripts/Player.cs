@@ -15,7 +15,6 @@ public class Player : MonoBehaviour
     public static event Action<Distraction> DestroyVase;
     bool inputPossible = true;
 
-    [SerializeField] Sprite shockedSprite;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -107,8 +106,7 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
-        ResetAnimations();
-        animator.SetBool("is_shocked", true);
+        animator.Play("shocked", 0, 0f);
         inputPossible = false;
         rb.linearVelocity = new Vector2(0, 0);
     }
