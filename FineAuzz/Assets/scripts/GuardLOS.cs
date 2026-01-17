@@ -10,6 +10,7 @@ public class GuardLOS : MonoBehaviour
     private Mesh mesh;
     Vector3 origin;
     [SerializeField, Range(0.0f, 360.0f)] private float startingAngle;
+    private float angle;
     private bool inVision = false;
     private bool beingDetected = false;
 
@@ -51,12 +52,6 @@ public class GuardLOS : MonoBehaviour
                 vertex = transform.InverseTransformPoint(raycastHit2D.point);
                 if (raycastHit2D.collider.CompareTag(playerTag))
                 {
-                    // player is in vision
-                    // idea for player kill:
-                    // - start a coroutine. coroutine checks every frame whether the player is still in vision
-                    // - if player leaves vision, coroutine terminates early
-                    // - if timer runs out, call a gameover script
-                    //Debug.Log("hello");
                     inVision = true;
                     if (beingDetected == false) StartCoroutine(DetectPlayer());
                     beingDetected = true;
@@ -96,7 +91,10 @@ public class GuardLOS : MonoBehaviour
     {
         startingAngle = GetAngleFromVectorFloat(aimDirection) - fov / 2f;
     }
-
+    public void IncrAimDirection(float aimIncr)
+    {
+        startingAngle += aimIncr;
+    }
     private IEnumerator DetectPlayer()
     {
         int timer = detectionTimer;

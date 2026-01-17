@@ -1,4 +1,6 @@
 using UnityEngine;
+using System;
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
@@ -6,9 +8,11 @@ public class Player : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] SpriteRenderer sprite;
     public float speed = 5f;
+    private bool InRange = false;
     private bool playerIsMoving = false;
     private Rigidbody2D rb;
-
+    private Distraction vase;
+    public static event Action<Distraction> DestroyVase;
     bool inputPossible = true;
 
     [SerializeField] Sprite shockedSprite;
@@ -28,6 +32,10 @@ public class Player : MonoBehaviour
             Vector2 movement = new Vector2(horizontal, vertical);
 
             rb.linearVelocity = movement * speed;
+
+            if(Input.GetKeyDown(KeyCode.F) && InRange){
+                DestroyVase?.Invoke(vase);
+            }
 
             //animator.SetBool("is_walk_front", movement.magnitude > 0);
             Animations();
@@ -69,10 +77,39 @@ public class Player : MonoBehaviour
             animator.SetBool("is_idle", true);
         }
     }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {   
+        if(collider.CompareTag("case"))
+        {
+            sprite.sortingOrder = 2;
+        }
+        
+        Debug.Log("enter");
+        if(collider.tag == "Vase"){
+            InRange = true;
+            vase = collider.gameObject.GetComponent<Distraction>();
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collider)
+    {
+        if(collider.tag == "Vase"){
+            InRange = false;
+        }
+        vase = null;
+
+        if(collider.CompareTag("case"))
+        {
+            sprite.sortingOrder = 10;
+        }
+    }
+
     public void Die()
     {
         animator.SetBool("is_shocked", true);
         inputPossible = false;
         rb.linearVelocity = new Vector2(0, 0);
     }
+
 }
