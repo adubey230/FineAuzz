@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Range
+  - case
   layers:
   - Default
   - TransparentFX
