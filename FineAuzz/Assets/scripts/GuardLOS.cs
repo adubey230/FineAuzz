@@ -82,7 +82,7 @@ public class GuardLOS : MonoBehaviour
         mesh.uv = uv;
         mesh.triangles = triangles;
 
-        blinkTimer-
+        
     }
 
     public void SetOrigin(Vector3 origin)
