@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (inputPossible)
         {
@@ -98,7 +98,22 @@ public class Player : MonoBehaviour
     public void Die()
     {
         animator.SetBool("is_shocked", true);
-        speed = 0;
         inputPossible = false;
+        rb.linearVelocity = new Vector2(0, 0);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("case"))
+        {
+            sprite.sortingOrder = 2;
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.CompareTag("case"))
+        {
+            sprite.sortingOrder = 10;
+        }
     }
 }
