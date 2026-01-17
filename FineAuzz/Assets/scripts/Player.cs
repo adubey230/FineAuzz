@@ -71,7 +71,8 @@ public class Player : MonoBehaviour
     }
     public void Die()
     {
-        sprite.sprite = shockedSprite;
+        animator.SetBool("is_shocked", true);
+        speed = 0;
         inputPossible = false;
     }
 }
