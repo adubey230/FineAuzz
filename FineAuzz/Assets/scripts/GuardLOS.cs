@@ -13,8 +13,12 @@ public class GuardLOS : MonoBehaviour
     private float angle;
     private bool inVision = false;
     private bool beingDetected = false;
-    [SerializeField, Range(0.0f, 10.0f)] private float blinkTimer;
-    [SerializeField, Range(0.0f, 2.0f)] private float resetTimer;
+    [SerializeField, Range(0.0f, 10.0f)] private float blinkTimerVal;
+    [SerializeField, Range(0.0f, 2.0f)] private float resetTimerVal;
+    private float blinkTimer;
+    private float resetTimer;
+    private bool runResetTimer = false;
+    private bool blinking = false;
     [SerializeField, Range(0.0f, 180.0f)] public float fov = 67.5f;
 
     public static event Action<GuardLOS> PlayerDetected;
@@ -24,10 +28,14 @@ public class GuardLOS : MonoBehaviour
         GetComponent<MeshFilter>().mesh = mesh;
         origin = Vector3.zero;
         // startingAngle += fov / 2;
+
+        blinkTimer = blinkTimerVal;
+        resetTimer = resetTimerVal;
     }
 
     void LateUpdate()
-    {
+    {   
+        if(!blinking){
         int rayCount = 100;
         float angle = startingAngle;
         float angleIncrease = fov / rayCount;
@@ -82,7 +90,21 @@ public class GuardLOS : MonoBehaviour
         mesh.uv = uv;
         mesh.triangles = triangles;
 
-        
+        }
+
+        blinkTimer-=Time.deltaTime;
+        if(blinkTimer <= 0.0f){
+            blink();
+        }
+        if(runResetTimer){
+            resetTimer -=Time.deltaTime;
+            if(resetTimer <= 0){
+                runResetTimer = false;
+                blinking = false;
+                resetTimer = resetTimerVal;
+                blinkTimer = blinkTimerVal;
+            }
+        }
     }
 
     public void SetOrigin(Vector3 origin)
@@ -131,5 +153,10 @@ public class GuardLOS : MonoBehaviour
         if (n < 0) n += 360;
 
         return n;
+    }
+
+    private void blink(){
+        runResetTimer = true;
+        blinking = true;
     }
 }
