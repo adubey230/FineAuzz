@@ -80,7 +80,7 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {   
-        if(other.CompareTag("case"))
+        if(collider.CompareTag("case"))
         {
             sprite.sortingOrder = 2;
         }
@@ -99,7 +99,7 @@ public class Player : MonoBehaviour
         }
         vase = null;
 
-        if(other.CompareTag("case"))
+        if(collider.CompareTag("case"))
         {
             sprite.sortingOrder = 10;
         }
