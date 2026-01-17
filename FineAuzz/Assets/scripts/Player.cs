@@ -6,9 +6,11 @@ public class Player : MonoBehaviour
     [SerializeField] Animator animator;
     public float speed = 5f;
     private bool playerIsMoving = false;
+    private Rigidbody2D rb; 
+    
     void Start()
     {
-
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -17,18 +19,11 @@ public class Player : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Vector3 playerMoves = new Vector3(horizontal, vertical, 0.0f);
+        Vector2 movement = new Vector2(horizontal, vertical);
 
-        transform.Translate(playerMoves * speed * Time.deltaTime);
+        rb.linearVelocity = movement * speed;
 
-        if (GetComponent<Rigidbody2D>().linearVelocity.magnitude > 0)
-        {
-            animator.SetBool("is_walk_front", true);
-        }
-        else
-        {
-            animator.SetBool("is_walk_front", false);
-        }
+        animator.SetBool("is_walk_front", movement.magnitude > 0);
     }
 
     private void Animations()
