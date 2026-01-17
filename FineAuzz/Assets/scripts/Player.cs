@@ -63,4 +63,9 @@ public class Player : MonoBehaviour
             animator.SetBool("is_idle", true);
         }
     }
+
+    void OnCollisionEnter2D(Collider other)
+    {
+        
+    }
 }
