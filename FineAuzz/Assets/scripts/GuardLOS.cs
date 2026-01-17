@@ -95,7 +95,10 @@ public class GuardLOS : MonoBehaviour
     {
         startingAngle += aimIncr;
     }
-
+    public void IncrOrigin(Vector3 incr)
+    {
+        this.origin += incr;
+    }
     private IEnumerator DetectPlayer()
     {
         int timer = detectionTimer;
