@@ -1,15 +1,21 @@
+using System;
 using UnityEngine;
+using System.Collections;
 
 public class GuardLOS : MonoBehaviour
 {
     [SerializeField] private LayerMask layerMask;
     [SerializeField] private string playerTag = "Player";
+    [SerializeField] private int detectionTimer = 60;
     private Mesh mesh;
     Vector3 origin;
-    private float startingAngle;
+    [SerializeField, Range(0.0f, 360.0f)] private float startingAngle;
+    private bool inVision = false;
+    private bool beingDetected = false;
 
     [SerializeField, Range(0.0f, 180.0f)] public float fov = 67.5f;
 
+    public static event Action<GuardLOS> PlayerDetected;
     void Start()
     {
         mesh = new Mesh();
@@ -51,6 +57,13 @@ public class GuardLOS : MonoBehaviour
                     // - if player leaves vision, coroutine terminates early
                     // - if timer runs out, call a gameover script
                     //Debug.Log("hello");
+                    inVision = true;
+                    if (beingDetected == false) StartCoroutine(DetectPlayer());
+                    beingDetected = true;
+                }
+                else
+                {
+                    inVision = false;
                 }
             }
 
@@ -82,6 +95,27 @@ public class GuardLOS : MonoBehaviour
     public void SetAimDirection(Vector3 aimDirection)
     {
         startingAngle = GetAngleFromVectorFloat(aimDirection) - fov / 2f;
+    }
+
+    private IEnumerator DetectPlayer()
+    {
+        int timer = detectionTimer;
+
+        while (timer > 0)
+        {
+            yield return new WaitForSeconds(0.016f);
+            timer--;
+
+            // end early if player leaves vision
+            if (!inVision)
+            {
+                beingDetected = false;
+                yield break;
+            }
+        }
+
+        PlayerDetected?.Invoke(this);
+        yield break;
     }
     private Vector3 GetVectorFromAngle(float angle)
     {
