@@ -28,15 +28,18 @@ public class GuardLOS : MonoBehaviour
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
         origin = Vector3.zero;
-        // startingAngle += fov / 2;
+        startingAngle += fov / 2;
+    }
+
+
+    void LateUpdate()
+    {
+        inVision = false;
 
         blinkTimer = blinkTimerVal;
         resetTimer = resetTimerVal;
-    }
 
-    void LateUpdate()
-    {   
-        if(!blinking){
+        if (!blinking){
         int rayCount = 100;
         float angle = startingAngle;
         float angleIncrease = fov / rayCount;
@@ -75,10 +78,6 @@ public class GuardLOS : MonoBehaviour
                         beingDetected = true;
                         Debug.Log(beingDetected);
                     }
-                }
-                else
-                {
-                    
                 }
             }
 
