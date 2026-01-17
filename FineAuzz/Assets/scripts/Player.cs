@@ -63,16 +63,9 @@ public class Player : MonoBehaviour
             animator.SetBool("is_idle", true);
         }
     }
-
-<<<<<<< Updated upstream
-    void OnCollisionEnter2D(Collider other)
-    {
-        
-=======
     public void Die()
     {
         Debug.Log("Imagine the shocked animation playing right now");
         this.enabled = false;
->>>>>>> Stashed changes
     }
 }
