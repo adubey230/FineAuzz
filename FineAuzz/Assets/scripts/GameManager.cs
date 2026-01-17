@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject exit;
     [SerializeField] private int timeToReset = 120;
     private bool startResetTimer = false;
+    private Player player;
 
     private string currentScene;
 
@@ -21,7 +22,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentScene = SceneManager.GetActiveScene().name;
-    }
+        player = FindFirstObjectByType<Player>();
+}
     void FixedUpdate()
     {
         if (startResetTimer)
@@ -38,5 +40,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Game Over");
         startResetTimer = true;
+        player.Die();
     }
 }

@@ -68,4 +68,9 @@ public class Player : MonoBehaviour
     {
         Debug.Log("yooo");
     }
+    public void Die()
+    {
+        Debug.Log("Imagine the shocked animation playing right now");
+        this.enabled = false;
+    }
 }
