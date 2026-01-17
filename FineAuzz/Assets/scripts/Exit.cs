@@ -20,7 +20,7 @@ public class Exit : MonoBehaviour
         Debug.Log("Hello");
         if(other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Room2");
+            SceneManager.LoadScene("Room 2 Final");
         }
     }
 }

@@ -1562,7 +1562,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -10
-  m_Sprite: {fileID: 7661829776559451565, guid: 1bccef20f4a784bd884f2ad60cd337a2, type: 3}
+  m_Sprite: {fileID: 2833115825328428799, guid: 6d1f79a996ba8419f89668b94ed8ffc7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2284,8 +2284,8 @@ MonoBehaviour:
   playerTag: Player
   detectionTimer: 60
   startingAngle: 0
-  blinkTimer: 0
-  resetTimer: 0
+  blinkTimerVal: 0
+  resetTimerVal: 0
   fov: 44
 --- !u!1 &1783986413
 GameObject:
