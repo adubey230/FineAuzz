@@ -64,8 +64,15 @@ public class Player : MonoBehaviour
         }
     }
 
+<<<<<<< Updated upstream
     void OnCollisionEnter2D(Collider other)
     {
         
+=======
+    public void Die()
+    {
+        Debug.Log("Imagine the shocked animation playing right now");
+        this.enabled = false;
+>>>>>>> Stashed changes
     }
 }
