@@ -80,6 +80,11 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {   
+        if(collider.CompareTag("case"))
+        {
+            sprite.sortingOrder = 2;
+        }
+        
         Debug.Log("enter");
         if(collider.tag == "Vase"){
             InRange = true;
@@ -93,6 +98,11 @@ public class Player : MonoBehaviour
             InRange = false;
         }
         vase = null;
+
+        if(collider.CompareTag("case"))
+        {
+            sprite.sortingOrder = 10;
+        }
     }
 
     public void Die()
@@ -102,18 +112,4 @@ public class Player : MonoBehaviour
         rb.linearVelocity = new Vector2(0, 0);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.CompareTag("case"))
-        {
-            sprite.sortingOrder = 2;
-        }
-    }
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if(other.CompareTag("case"))
-        {
-            sprite.sortingOrder = 10;
-        }
-    }
 }
