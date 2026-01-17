@@ -3,6 +3,7 @@ using UnityEngine;
 public class GuardLOS : MonoBehaviour
 {
     [SerializeField] private LayerMask layerMask;
+    [SerializeField] private string playerTag = "Player";
     private Mesh mesh;
     Vector3 origin;
     private float startingAngle;
@@ -32,17 +33,26 @@ public class GuardLOS : MonoBehaviour
 
         int vertexIndex = 1;
         int triangleIndex = 0;
+
         for (int i = 0; i <= rayCount; i++)
         {
             Vector3 vertex = origin + GetVectorFromAngle(angle) * viewDistance;
             RaycastHit2D raycastHit2D = Physics2D.Raycast(transform.position, GetVectorFromAngle(angle), viewDistance, layerMask);
-            //RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, GetVectorFromAngle(angle), viewDistance, layerMask);
             if (raycastHit2D.collider == null)
             {
                 vertex = origin + GetVectorFromAngle(angle) * viewDistance;
             } else {
                 vertex = transform.InverseTransformPoint(raycastHit2D.point);
+                if (raycastHit2D.collider.CompareTag(playerTag))
+                {
+                    // player is in vision
+                    // idea for player kill:
+                    // - start a coroutine. coroutine checks every frame whether the player is still in vision
+                    // - if player leaves vision, coroutine terminates early
+                    // - if timer runs out, call a gameover script
+                }
             }
+
             vertices[vertexIndex] = vertex;
 
             if (i > 0)
