@@ -53,7 +53,13 @@ public class GameManager : MonoBehaviour
 
     private void TriggerVaseActions(Distraction vase){
         vase.CrackVase();
-        
+        float VecX = vase.gameObject.transform.x - guardToLook.transform.x;
+        float VecY = vase.gameObject.transform.y - guardToLook.transform.y;
+        Vector2 vaseAng = new Vector2(VecX, VecY);
+        Vector2 angleDiff = Vector2.SignedAngle(vaseAng, guardToLook.GetComponent<GuardLOS>().GetCurrAng());
+        foreach(GameObject guardToLook in guards){
+            guardToLook().IncrAimDirection(angleDiff);
+        }
     }
 
 }
