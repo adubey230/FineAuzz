@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3715be561452346219ec411c2e9b145f
+guid: dcd9db7c27ae348519002004a687da5f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7043404614316229645
-    second: Front walk 1_0
+      213: -3843481831687117128
+    second: Front stand 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Front walk 1_0
+      name: Front stand 2_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 5
         y: 0
         width: 23
-        height: 32
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d048aaddd233fb160800000000000000
-      internalID: 7043404614316229645
+      spriteID: 8b62f9143a539aac0800000000000000
+      internalID: -3843481831687117128
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 77f668d5b66c548a2a8c42d4f2da4462
+    spriteID: c19fa1b01273a42f49276fd2467894a4
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Front walk 1_0: 7043404614316229645
+      Front stand 2_0: -3843481831687117128
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
