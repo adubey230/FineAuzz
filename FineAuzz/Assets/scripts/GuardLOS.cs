@@ -18,9 +18,7 @@ public class GuardLOS : MonoBehaviour
 
     void LateUpdate()
     {
-        origin = Vector3.zero;
-
-        int rayCount = 50;
+        int rayCount = 100;
         float angle = startingAngle;
         float angleIncrease = fov / rayCount;
         float viewDistance = 50f;
@@ -36,12 +34,13 @@ public class GuardLOS : MonoBehaviour
         for (int i = 0; i <= rayCount; i++)
         {
             Vector3 vertex = origin + GetVectorFromAngle(angle) * viewDistance;
-            RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, GetVectorFromAngle(angle), viewDistance, layerMask);
+            RaycastHit2D raycastHit2D = Physics2D.Raycast(transform.position, GetVectorFromAngle(angle), viewDistance, layerMask);
+            //RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, GetVectorFromAngle(angle), viewDistance, layerMask);
             if (raycastHit2D.collider == null)
             {
                 vertex = origin + GetVectorFromAngle(angle) * viewDistance;
             } else {
-                vertex = raycastHit2D.point;
+                vertex = transform.InverseTransformPoint(raycastHit2D.point);
             }
             vertices[vertexIndex] = vertex;
 
