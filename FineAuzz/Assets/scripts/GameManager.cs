@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     private void OnDisable()
     {
         GuardLOS.PlayerDetected -= HandlePlayerCaught;
-        Player.DestroyVase += TriggerVaseActions;
+        Player.DestroyVase -= TriggerVaseActions;
     }
 
     void Start()
