@@ -21,6 +21,7 @@ public class GuardLOS : MonoBehaviour
     private bool runResetTimer = false;
     private bool blinking = false;
     [SerializeField, Range(0.0f, 180.0f)] public float fov = 67.5f;
+    private float rotateSpeed = 100.0f;
 
     public static event Action<GuardLOS> PlayerDetected;
     void Start()
@@ -179,4 +180,25 @@ public class GuardLOS : MonoBehaviour
         runResetTimer = true;
         blinking = true;
     }
+
+    public void RotateToVase(Vector2 targetPos)
+    {
+        Vector2 direction = (targetPos - (Vector2)transform.position).normalized;
+
+        float targetAngle = (Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg) + 180f;
+
+        if (targetAngle < 0) targetAngle += 360f;
+
+        while (Mathf.Abs(Mathf.DeltaAngle(angle, targetAngle)) > 0.5f)
+        {
+            float delta = Mathf.DeltaAngle(angle, targetAngle);
+            float step = Mathf.Sign(delta) * rotateSpeed * Time.deltaTime;
+
+            angle += step;
+            angle = (angle + 360f) % 360f;
+
+            IncrAimDirection(step);
+        }
+    }
 }
+

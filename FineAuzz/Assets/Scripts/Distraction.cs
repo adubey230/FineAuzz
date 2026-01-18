@@ -11,10 +11,20 @@ public class Distraction : MonoBehaviour
         
     }
 
+    void OnEnable()
+    {
+
+    }
+
+    void OnDisable()
+    {
+
+    }
+
     void Update(){
-        if(Input.GetKeyDown(KeyCode.F)){
-            CrackVase();
-        }
+        // if(Input.GetKeyDown(KeyCode.F)){
+        //     CrackVase();
+        // }
     }
 
     public void CrackVase(){
@@ -22,6 +32,7 @@ public class Distraction : MonoBehaviour
             Debug.Log("crack");
             IsCracked = true;
             GetComponent<SpriteRenderer>().sprite = broken;
+            gameObject.SetActive(false);
         }
     }
 }

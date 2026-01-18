@@ -1,6 +1,7 @@
 using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int timeToReset = 120;
     private bool startResetTimer = false;
     private Player player;
-    private GameObject[] guards;
+    [SerializeField] private List<GuardLOS> guards;
     [SerializeField] Distraction vase;
 
     
@@ -17,8 +18,7 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
-        GuardLOS.PlayerDetected += HandlePlayerCaught;
-        Player.DestroyVase += TriggerVaseActions;
+        
     }
 
     private void OnDisable()
@@ -29,9 +29,16 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        guards.Clear();
+        GuardLOS.PlayerDetected += HandlePlayerCaught;
+        Player.DestroyVase += TriggerVaseActions;
         currentScene = SceneManager.GetActiveScene().name;
         player = FindFirstObjectByType<Player>();
-        guards = GameObject.FindGameObjectsWithTag("Guard");
+        GameObject[] Gp = GameObject.FindGameObjectsWithTag("Guard");
+        foreach (GameObject item in Gp)
+        {
+            guards.Add(item.GetComponentInChildren<GuardLOS>());
+        }
     }
 
     void FixedUpdate()
@@ -54,13 +61,14 @@ public class GameManager : MonoBehaviour
     }
 
     private void TriggerVaseActions(Distraction vase){
+        Debug.Log("PAIN");
         vase.CrackVase();
-        foreach(GameObject guardToLook in guards){
+        foreach(GuardLOS guardToLook in guards){
+            Debug.Log("hi");
             float VecX = vase.gameObject.transform.position.x - guardToLook.transform.position.x;
             float VecY = vase.gameObject.transform.position.y - guardToLook.transform.position.y;
             Vector2 vaseAng = new Vector2(VecX, VecY);
-            float angleDiff = Vector2.SignedAngle(vaseAng, guardToLook.GetComponent<GuardLOS>().GetCurrAng());
-            guardToLook.GetComponent<GuardLOS>().IncrAimDirection(angleDiff);
+            guardToLook.RotateToVase(vaseAng);
             
         }
     }

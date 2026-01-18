@@ -40,7 +40,7 @@ public class EyeTimer : MonoBehaviour
 
         //transform.position = cam.ScreenToWorldPoint(new Vector3(guard.transform.position.x, guard.transform.position.y ));
         
-        Debug.Log(transform.position);
+        //Debug.Log(transform.position);
     }
 
     private void Being(float second){
