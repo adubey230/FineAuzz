@@ -42,7 +42,7 @@ public class GuardLOS : MonoBehaviour
         inVision = false;
 
         if (!blinking){
-        int rayCount = 1000;
+        int rayCount = 500;
         float angle = startingAngle;
         float angleIncrease = fov / rayCount;
         float viewDistance = 50f;
