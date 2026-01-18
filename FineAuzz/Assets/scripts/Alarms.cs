@@ -11,6 +11,7 @@ public class Alarms : MonoBehaviour
     {
         source.clip = clip;
         source.Play();
+        source.loop = true;
         bgAud.source.clip = newClip;
         bgAud.source.Play();
     }
