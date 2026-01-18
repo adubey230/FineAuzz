@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     private Distraction vase;
     public static event Action<Distraction> DestroyVase;
     bool inputPossible = true;
+    public bool dead = false;
 
     void Start()
     {
@@ -123,5 +124,7 @@ public class Player : MonoBehaviour
         animator.Play("shocked", 0, 0f);
         inputPossible = false;
         rb.linearVelocity = new Vector2(0, 0);
+        dead = true;
+        TransitionType.SwitchType(false);
     }
 }

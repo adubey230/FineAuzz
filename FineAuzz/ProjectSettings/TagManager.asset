@@ -7,6 +7,8 @@ TagManager:
   - Range
   - case
   - Guard
+  - Vase
+  - Anim
   layers:
   - Default
   - TransparentFX
