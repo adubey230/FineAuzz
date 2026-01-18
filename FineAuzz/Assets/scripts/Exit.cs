@@ -7,6 +7,7 @@ public class Exit : MonoBehaviour
     public bool exited = false;
     private float timer = 1;
     public bool start = false;
+    [SerializeField]public GameObject player;
     void Start()
     {
         
@@ -26,6 +27,7 @@ public class Exit : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         //TransitionType.SwitchType(true);
+        player.SetActive(false);
         exited = true;
         Debug.Log("Hello");
         if(other.CompareTag("Player"))
