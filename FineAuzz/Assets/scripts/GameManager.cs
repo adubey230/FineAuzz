@@ -61,10 +61,10 @@ public class GameManager : MonoBehaviour
     }
 
     private void TriggerVaseActions(Distraction vase){
-        Debug.Log("PAIN");
+        //Debug.Log("PAIN");
         vase.CrackVase();
         foreach(GuardLOS guardToLook in guards){
-            Debug.Log("hi");
+            //Debug.Log("hi");
             float VecX = vase.gameObject.transform.position.x - guardToLook.transform.position.x;
             float VecY = vase.gameObject.transform.position.y - guardToLook.transform.position.y;
             Vector2 vaseAng = new Vector2(VecX, VecY);
