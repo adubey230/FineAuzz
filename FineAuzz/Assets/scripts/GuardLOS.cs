@@ -19,7 +19,7 @@ public class GuardLOS : MonoBehaviour
     [SerializeField]private float blinkTimer;
     private float resetTimer;
     private bool runResetTimer = false;
-    private bool blinking = false;
+    public bool blinking = false;
     [SerializeField, Range(0.0f, 180.0f)] public float fov = 67.5f;
     private float rotateSpeed = 100.0f;
 
