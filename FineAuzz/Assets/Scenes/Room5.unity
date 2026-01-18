@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 197931689}
   m_Layer: 6
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1646,7 +1646,7 @@ GameObject:
   - component: {fileID: 1260587876}
   - component: {fileID: 1260587878}
   - component: {fileID: 1260587879}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: e-button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
