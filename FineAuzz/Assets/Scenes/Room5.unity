@@ -958,6 +958,11 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!1 &487864162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3298978698073728660, guid: ac521044f8dde4ed297be6ecc8f9f438, type: 3}
+  m_PrefabInstance: {fileID: 54909240}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &489779170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,6 +1800,10 @@ PrefabInstance:
       propertyPath: guard
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2199490737391291173, guid: cfa958b2f479d34439c4cb127f83f5ee, type: 3}
+      propertyPath: exit
+      value: 
+      objectReference: {fileID: 487864162}
     - target: {fileID: 5236425219143322841, guid: cfa958b2f479d34439c4cb127f83f5ee, type: 3}
       propertyPath: cam
       value: 
