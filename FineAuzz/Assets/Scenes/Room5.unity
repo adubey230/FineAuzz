@@ -174,7 +174,7 @@ PrefabInstance:
     - target: {fileID: 1746564890643478870, guid: ac521044f8dde4ed297be6ecc8f9f438, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 613559523}
+      objectReference: {fileID: 264674946}
     - target: {fileID: 3298978698073728660, guid: ac521044f8dde4ed297be6ecc8f9f438, type: 3}
       propertyPath: m_Name
       value: Exit
@@ -1408,11 +1408,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5713229605337083806, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.16
+      value: -5.98
       objectReference: {fileID: 0}
     - target: {fileID: 5713229605337083806, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.37
+      value: -2.47
       objectReference: {fileID: 0}
     - target: {fileID: 5936296337524899385, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_TagString
@@ -1426,11 +1426,6 @@ PrefabInstance:
       addedObject: {fileID: 1406419755}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
---- !u!1 &613559523 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5741860871736297101, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
-  m_PrefabInstance: {fileID: 613559522}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &788372408
 GameObject:
   m_ObjectHideFlags: 0
