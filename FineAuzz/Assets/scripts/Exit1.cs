@@ -17,10 +17,10 @@ public class Exit1 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Hello");
-        if(other.CompareTag("Player"))
-        {
-            SceneManager.LoadScene("Room3");
-        }
+        // Debug.Log("Hello");
+        // if(other.CompareTag("Player"))
+        // {
+        //     SceneManager.LoadScene("Room3");
+        // }
     }
 }
