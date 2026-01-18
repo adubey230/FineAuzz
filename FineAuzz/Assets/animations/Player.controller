@@ -129,7 +129,7 @@ AnimatorStateMachine:
     m_Position: {x: 670, y: 280, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6818881662730398267}
-    m_Position: {x: 705, y: 345, z: 0}
+    m_Position: {x: 10, y: 350, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -278,6 +278,12 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
   - m_Name: is_idle
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: is_shocked
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
