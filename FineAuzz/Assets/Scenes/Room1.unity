@@ -1648,7 +1648,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1086137668}
   - component: {fileID: 1086137667}
-  m_Layer: 0
+  - component: {fileID: 1086137670}
+  - component: {fileID: 1086137669}
+  m_Layer: 6
   m_Name: Guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1702,8 +1704,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.019074326, g: 0.038283687, b: 0.5320754, a: 1}
+  m_Sprite: {fileID: 713199433453704164, guid: 8a53b004e151f084999bdb84510685b5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1722,13 +1724,72 @@ Transform:
   m_GameObject: {fileID: 1086137666}
   serializedVersion: 2
   m_LocalRotation: {x: -0.006982533, y: 0, z: -0, w: 0.9999757}
-  m_LocalPosition: {x: 5.5, y: -0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 5.6, y: 0.27, z: -0.01}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1762961209}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -0.8, y: 0, z: 0}
+--- !u!95 &1086137669
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086137666}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ebf7d0fc7d5df0a41ba67936728be88b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &1086137670
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086137666}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.3799999, y: 3.0599997}
+  m_Direction: 0
 --- !u!1 &1120650818
 GameObject:
   m_ObjectHideFlags: 0
@@ -3158,7 +3219,7 @@ MonoBehaviour:
   guard: {fileID: 1086137666}
   blinkDuration: 0
   resetDuration: 0
-  offset: 20
+  offset: 130
   cam: {fileID: 519420031}
   rectTransform: {fileID: 279175979}
 --- !u!1 &2046712066
