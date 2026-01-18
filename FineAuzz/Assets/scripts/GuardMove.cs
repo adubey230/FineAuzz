@@ -19,6 +19,7 @@ public class GuardMove : MonoBehaviour
     private int currIndex;
 
     private bool isMoving = false;
+    private float startAngle;
 
     Vector2 currentPos;
     Vector2 nextPos;
@@ -27,11 +28,25 @@ public class GuardMove : MonoBehaviour
         transform.position = patrolPoints[0];
         guardLOS = GetComponentInChildren<GuardLOS>();
 
-        Vector2 facing = transform.right.normalized;
-        currAngle = Mathf.Atan2(facing.y, facing.x);
-        if (currAngle < 0) currAngle += 360;
+        startAngle = guardLOS.startingAngle;
 
-        StartCoroutine(PatrolLoop());
+        if (startAngle < 0) startAngle += 360;
+
+        // initialize to face starting angle
+        if (patrolPoints.Count > 1)
+        {
+            Vector2 direction = (patrolPoints[1] - (Vector2)transform.position).normalized;
+
+            float targetAngle =
+                Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+            if (targetAngle < 0) targetAngle += 360f;
+
+            float delta = Mathf.DeltaAngle(startAngle, nextAngle);
+            guardLOS.IncrAimDirection(delta);
+
+            StartCoroutine(PatrolLoop());
+        }
     }
 
     private IEnumerator PatrolLoop()

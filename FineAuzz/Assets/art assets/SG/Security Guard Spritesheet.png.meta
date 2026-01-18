@@ -1,0 +1,1172 @@
+fileFormatVersion: 2
+guid: 8a53b004e151f084999bdb84510685b5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6879710351430276285
+    second: Security Guard Spritesheet_0
+  - first:
+      213: 713199433453704164
+    second: Security Guard Spritesheet_1
+  - first:
+      213: -1153702738191042007
+    second: Security Guard Spritesheet_2
+  - first:
+      213: -4978400777828594187
+    second: Security Guard Spritesheet_3
+  - first:
+      213: 2160193744405450229
+    second: Security Guard Spritesheet_4
+  - first:
+      213: 8800485833402070523
+    second: Security Guard Spritesheet_5
+  - first:
+      213: 6477544437737174643
+    second: Security Guard Spritesheet_6
+  - first:
+      213: -3505068037248703334
+    second: Security Guard Spritesheet_7
+  - first:
+      213: 1115570701901168417
+    second: Security Guard Spritesheet_8
+  - first:
+      213: 3680538279009383859
+    second: Security Guard Spritesheet_9
+  - first:
+      213: -7952015802176365671
+    second: Security Guard Spritesheet_10
+  - first:
+      213: -2329461271513505357
+    second: Security Guard Spritesheet_11
+  - first:
+      213: -5532724167780593775
+    second: Security Guard Spritesheet_12
+  - first:
+      213: -5377536313768612122
+    second: Security Guard Spritesheet_13
+  - first:
+      213: 4651707462495709241
+    second: Security Guard Spritesheet_14
+  - first:
+      213: -8065339861355933191
+    second: Security Guard Spritesheet_15
+  - first:
+      213: 4956541849656298769
+    second: Security Guard Spritesheet_16
+  - first:
+      213: -2430176717850728396
+    second: Security Guard Spritesheet_17
+  - first:
+      213: 6064488458310181694
+    second: Security Guard Spritesheet_18
+  - first:
+      213: 1481891728251998518
+    second: Security Guard Spritesheet_19
+  - first:
+      213: -3424244642145600843
+    second: Security Guard Spritesheet_20
+  - first:
+      213: 4486826544668491913
+    second: Security Guard Spritesheet_21
+  - first:
+      213: 8548763271992422585
+    second: Security Guard Spritesheet_22
+  - first:
+      213: 1042602330626657199
+    second: Security Guard Spritesheet_23
+  - first:
+      213: -8670594992726400247
+    second: Security Guard Spritesheet_24
+  - first:
+      213: 5743917747528027120
+    second: Security Guard Spritesheet_25
+  - first:
+      213: -1065377215552027499
+    second: Security Guard Spritesheet_26
+  - first:
+      213: -1594098234014489989
+    second: Security Guard Spritesheet_27
+  - first:
+      213: 7420173366897317947
+    second: Security Guard Spritesheet_28
+  - first:
+      213: -4177198118088931865
+    second: Security Guard Spritesheet_29
+  - first:
+      213: -3185114901634831363
+    second: Security Guard Spritesheet_30
+  - first:
+      213: 6441039318026054600
+    second: Security Guard Spritesheet_31
+  - first:
+      213: 8553973972328025770
+    second: Security Guard Spritesheet_32
+  - first:
+      213: -8749244506761071374
+    second: Security Guard Spritesheet_33
+  - first:
+      213: -7629673146563516364
+    second: Security Guard Spritesheet_34
+  - first:
+      213: -8823502379185050891
+    second: Security Guard Spritesheet_35
+  - first:
+      213: -4933018703187528646
+    second: Security Guard Spritesheet_36
+  - first:
+      213: 9017707862108057414
+    second: Security Guard Spritesheet_37
+  - first:
+      213: 3728486813981012907
+    second: Security Guard Spritesheet_38
+  - first:
+      213: -4716795746549703497
+    second: Security Guard Spritesheet_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1212
+        width: 108
+        height: 306
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db454964d14a97f50800000000000000
+      internalID: 6879710351430276285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 1206
+        width: 138
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e394052b1bc5e900800000000000000
+      internalID: 713199433453704164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1206
+        width: 108
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a3ab1e8793dffe0800000000000000
+      internalID: -1153702738191042007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1206
+        width: 138
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd8ff78eda29eab0800000000000000
+      internalID: -4978400777828594187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1206
+        width: 108
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fdce4de3cc8afd10800000000000000
+      internalID: 2160193744405450229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1206
+        width: 138
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5b9ce0d3b912a70800000000000000
+      internalID: 8800485833402070523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1206
+        width: 108
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376b12cb85cd4e950800000000000000
+      internalID: 6477544437737174643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 1206
+        width: 108
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a942736d03f7b5fc0800000000000000
+      internalID: -3505068037248703334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1206
+        width: 138
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ff6a094ad4b7f00800000000000000
+      internalID: 1115570701901168417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1206
+        width: 108
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5f49e7016e31330800000000000000
+      internalID: 3680538279009383859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 822
+        width: 108
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99b1cfe62c3c4a190800000000000000
+      internalID: -7952015802176365671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 822
+        width: 138
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b16869c0571cafd0800000000000000
+      internalID: -2329461271513505357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 822
+        width: 108
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f083bdea0d733b0800000000000000
+      internalID: -5532724167780593775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 822
+        width: 138
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eeee0bc6372f55b0800000000000000
+      internalID: -5377536313768612122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 822
+        width: 108
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93827159a4f2e8040800000000000000
+      internalID: 4651707462495709241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 822
+        width: 138
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1d41bc028221090800000000000000
+      internalID: -8065339861355933191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 822
+        width: 108
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d0f172d8c29c440800000000000000
+      internalID: 4956541849656298769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 822
+        width: 108
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43825179627464ed0800000000000000
+      internalID: -2430176717850728396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 822
+        width: 138
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33e80e2f14692450800000000000000
+      internalID: 6064488458310181694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 822
+        width: 108
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631dc0aecacb09410800000000000000
+      internalID: 1481891728251998518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 432
+        width: 114
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba70e0f3a3aa70d0800000000000000
+      internalID: -3424244642145600843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 420
+        width: 138
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98042cb58f8644e30800000000000000
+      internalID: 4486826544668491913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 432
+        width: 126
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0b30017ee43a670800000000000000
+      internalID: 8548763271992422585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 420
+        width: 138
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab0ff6bb41187e00800000000000000
+      internalID: 1042602330626657199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 432
+        width: 114
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 903234bfacbdba780800000000000000
+      internalID: -8670594992726400247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 420
+        width: 138
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb487042ce76bf40800000000000000
+      internalID: 5743917747528027120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 432
+        width: 126
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5940a3b21150731f0800000000000000
+      internalID: -1065377215552027499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 432
+        width: 114
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b722d702a10a0e9e0800000000000000
+      internalID: -1594098234014489989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 420
+        width: 138
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b389ab90d50c9f660800000000000000
+      internalID: 7420173366897317947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 432
+        width: 126
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e501ee717c9706c0800000000000000
+      internalID: -4177198118088931865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 48
+        width: 120
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfba0475fd23cc3d0800000000000000
+      internalID: -3185114901634831363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 42
+        width: 138
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb6447322b236950800000000000000
+      internalID: 6441039318026054600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 48
+        width: 126
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae8c86c102d5b670800000000000000
+      internalID: 8553973972328025770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 42
+        width: 138
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4f7710a70749680800000000000000
+      internalID: -8749244506761071374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 48
+        width: 120
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 438aeba62b4fd1690800000000000000
+      internalID: -7629673146563516364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 42
+        width: 138
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fa6cd5c55f9c8580800000000000000
+      internalID: -8823502379185050891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 48
+        width: 126
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34362e20a56a8bb0800000000000000
+      internalID: -4933018703187528646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 48
+        width: 120
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fa231d585552d70800000000000000
+      internalID: 9017707862108057414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 42
+        width: 138
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3f011c00f3eb330800000000000000
+      internalID: 3728486813981012907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Security Guard Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 48
+        width: 126
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bcd4d852439a8eb0800000000000000
+      internalID: -4716795746549703497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6bb2bdbc377679f428665dfb45818df1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Security Guard Spritesheet_0: 6879710351430276285
+      Security Guard Spritesheet_1: 713199433453704164
+      Security Guard Spritesheet_10: -7952015802176365671
+      Security Guard Spritesheet_11: -2329461271513505357
+      Security Guard Spritesheet_12: -5532724167780593775
+      Security Guard Spritesheet_13: -5377536313768612122
+      Security Guard Spritesheet_14: 4651707462495709241
+      Security Guard Spritesheet_15: -8065339861355933191
+      Security Guard Spritesheet_16: 4956541849656298769
+      Security Guard Spritesheet_17: -2430176717850728396
+      Security Guard Spritesheet_18: 6064488458310181694
+      Security Guard Spritesheet_19: 1481891728251998518
+      Security Guard Spritesheet_2: -1153702738191042007
+      Security Guard Spritesheet_20: -3424244642145600843
+      Security Guard Spritesheet_21: 4486826544668491913
+      Security Guard Spritesheet_22: 8548763271992422585
+      Security Guard Spritesheet_23: 1042602330626657199
+      Security Guard Spritesheet_24: -8670594992726400247
+      Security Guard Spritesheet_25: 5743917747528027120
+      Security Guard Spritesheet_26: -1065377215552027499
+      Security Guard Spritesheet_27: -1594098234014489989
+      Security Guard Spritesheet_28: 7420173366897317947
+      Security Guard Spritesheet_29: -4177198118088931865
+      Security Guard Spritesheet_3: -4978400777828594187
+      Security Guard Spritesheet_30: -3185114901634831363
+      Security Guard Spritesheet_31: 6441039318026054600
+      Security Guard Spritesheet_32: 8553973972328025770
+      Security Guard Spritesheet_33: -8749244506761071374
+      Security Guard Spritesheet_34: -7629673146563516364
+      Security Guard Spritesheet_35: -8823502379185050891
+      Security Guard Spritesheet_36: -4933018703187528646
+      Security Guard Spritesheet_37: 9017707862108057414
+      Security Guard Spritesheet_38: 3728486813981012907
+      Security Guard Spritesheet_39: -4716795746549703497
+      Security Guard Spritesheet_4: 2160193744405450229
+      Security Guard Spritesheet_5: 8800485833402070523
+      Security Guard Spritesheet_6: 6477544437737174643
+      Security Guard Spritesheet_7: -3505068037248703334
+      Security Guard Spritesheet_8: 1115570701901168417
+      Security Guard Spritesheet_9: 3680538279009383859
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
