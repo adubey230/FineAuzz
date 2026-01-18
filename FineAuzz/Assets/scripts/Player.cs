@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] Animator animator;
     [SerializeField] SpriteRenderer sprite;
+    [SerializeField] EButton button;
+    [SerializeField] GameObject ebutton;
     public float speed = 5f;
     public bool InRange = false;
     public bool VaseCheck = false;
@@ -25,6 +27,11 @@ public class Player : MonoBehaviour
                 Debug.Log("KMS");
                 DestroyVase?.Invoke(vase);
         }
+
+        if(button.hasBeenOpened)
+        {
+            ebutton.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -32,7 +39,7 @@ public class Player : MonoBehaviour
     {
         
 
-        if (inputPossible)
+        if (inputPossible && !button.open)
         {
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
