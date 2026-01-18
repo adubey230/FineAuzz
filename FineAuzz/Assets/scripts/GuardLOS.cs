@@ -16,7 +16,7 @@ public class GuardLOS : MonoBehaviour
     private bool beingDetected = false;
     [SerializeField, Range(0.0f, 10.0f)] private float blinkTimerVal;
     [SerializeField, Range(0.0f, 2.0f)] private float resetTimerVal;
-    private float blinkTimer;
+    [SerializeField]private float blinkTimer;
     private float resetTimer;
     private bool runResetTimer = false;
     private bool blinking = false;
@@ -100,6 +100,10 @@ public class GuardLOS : MonoBehaviour
         mesh.uv = uv;
         mesh.triangles = triangles;
 
+        }else{
+            mesh.vertices = null;
+            mesh.uv = null;
+            mesh.triangles = null;
         }
 
         blinkTimer-=Time.deltaTime;
@@ -171,6 +175,7 @@ public class GuardLOS : MonoBehaviour
     }
 
     private void blink(){
+        //Debug.Log("blink");
         runResetTimer = true;
         blinking = true;
     }
