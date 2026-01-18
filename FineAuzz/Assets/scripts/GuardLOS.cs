@@ -29,15 +29,15 @@ public class GuardLOS : MonoBehaviour
         GetComponent<MeshFilter>().mesh = mesh;
         origin = Vector3.zero;
         startingAngle += fov / 2;
+        blinkTimer = blinkTimerVal;
+        resetTimer = resetTimerVal;
+
     }
 
 
     void LateUpdate()
     {
         inVision = false;
-
-        blinkTimer = blinkTimerVal;
-        resetTimer = resetTimerVal;
 
         if (!blinking){
         int rayCount = 100;
@@ -164,6 +164,10 @@ public class GuardLOS : MonoBehaviour
         if (n < 0) n += 360;
 
         return n;
+    }
+
+    public Vector3 GetCurrAng(){
+        return GetVectorFromAngle(angle);
     }
 
     private void blink(){

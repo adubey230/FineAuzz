@@ -57,8 +57,8 @@ public class GameManager : MonoBehaviour
             float VecX = vase.gameObject.transform.position.x - guardToLook.transform.position.x;
             float VecY = vase.gameObject.transform.position.y - guardToLook.transform.position.y;
             Vector2 vaseAng = new Vector2(VecX, VecY);
-            // Vector2 angleDiff = Vector2.SignedAngle(vaseAng, guardToLook.GetComponent<GuardLOS>().GetCurrAng());
-            // guardToLook().IncrAimDirection(angleDiff);
+            float angleDiff = Vector2.SignedAngle(vaseAng, guardToLook.GetComponent<GuardLOS>().GetCurrAng());
+            guardToLook.GetComponent<GuardLOS>().IncrAimDirection(angleDiff);
             
         }
     }
