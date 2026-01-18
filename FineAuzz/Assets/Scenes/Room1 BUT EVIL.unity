@@ -403,11 +403,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5713229605337083806, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.51
+      value: 5.59
       objectReference: {fileID: 0}
     - target: {fileID: 5713229605337083806, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.39
+      value: -2.47
       objectReference: {fileID: 0}
     - target: {fileID: 5713229605337083806, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1222,6 +1222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Exit
   exited: 0
   start: 0
+  scene: 0
   player: {fileID: 0}
 --- !u!61 &371159113
 BoxCollider2D:
@@ -1862,7 +1863,6 @@ MonoBehaviour:
   scaler: {fileID: 0}
   blinkDuration: 0
   resetDuration: 0
-  offset: 60
   cam: {fileID: 519420031}
   rectTransform: {fileID: 279175979}
 --- !u!114 &756163906
@@ -3896,7 +3896,6 @@ MonoBehaviour:
   scaler: {fileID: 0}
   blinkDuration: 0
   resetDuration: 0
-  offset: 60
   cam: {fileID: 519420031}
   rectTransform: {fileID: 279175979}
 --- !u!114 &1742690771
@@ -4501,7 +4500,6 @@ MonoBehaviour:
   scaler: {fileID: 0}
   blinkDuration: 0
   resetDuration: 0
-  offset: 60
   cam: {fileID: 519420031}
   rectTransform: {fileID: 279175979}
 --- !u!1 &2046712066
