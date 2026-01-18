@@ -549,7 +549,6 @@ MonoBehaviour:
   scaler: {fileID: 0}
   blinkDuration: 0
   resetDuration: 0
-  offset: 60
   cam: {fileID: 519420031}
   rectTransform: {fileID: 1844804041}
 --- !u!114 &241877838
@@ -3363,6 +3362,10 @@ PrefabInstance:
       propertyPath: guard
       value: 
       objectReference: {fileID: 847452968}
+    - target: {fileID: 85385310525661465, guid: cfa958b2f479d34439c4cb127f83f5ee, type: 3}
+      propertyPath: offset
+      value: 1.35
+      objectReference: {fileID: 0}
     - target: {fileID: 5236425219143322841, guid: cfa958b2f479d34439c4cb127f83f5ee, type: 3}
       propertyPath: cam
       value: 
