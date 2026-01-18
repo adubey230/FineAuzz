@@ -29,6 +29,8 @@ public class TransitionType : MonoBehaviour
     }
 
     public static bool getType(){
+
         return AniType;
+        
     }
 }
