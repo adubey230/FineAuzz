@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: 5d253cc8219a94189a4787cfff3b1583
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3330382935676753703
+    second: Case & Artifact Spritesheet_0
+  - first:
+      213: 2371538121485607733
+    second: Case & Artifact Spritesheet_1
+  - first:
+      213: -318892596533972111
+    second: Case & Artifact Spritesheet_2
+  - first:
+      213: -1030730629813909528
+    second: Case & Artifact Spritesheet_3
+  - first:
+      213: -1406090328299484393
+    second: Case & Artifact Spritesheet_4
+  - first:
+      213: 2254464156592762838
+    second: Case & Artifact Spritesheet_5
+  - first:
+      213: -4432765605358206853
+    second: Case & Artifact Spritesheet_6
+  - first:
+      213: 1562375963124239287
+    second: Case & Artifact Spritesheet_7
+  - first:
+      213: -2330574804280696591
+    second: Case & Artifact Spritesheet_8
+  - first:
+      213: 5722257059533736091
+    second: Case & Artifact Spritesheet_9
+  - first:
+      213: 4191407014931187438
+    second: Case & Artifact Spritesheet_10
+  - first:
+      213: -9080038500635027441
+    second: Case & Artifact Spritesheet_11
+  - first:
+      213: -7580392532910013063
+    second: Case & Artifact Spritesheet_12
+  - first:
+      213: 8244462647106064578
+    second: Case & Artifact Spritesheet_13
+  - first:
+      213: -8148814467552625818
+    second: Case & Artifact Spritesheet_14
+  - first:
+      213: -3740064381400873158
+    second: Case & Artifact Spritesheet_15
+  - first:
+      213: -3963169077725689192
+    second: Case & Artifact Spritesheet_16
+  - first:
+      213: -7942299913889622154
+    second: Case & Artifact Spritesheet_17
+  - first:
+      213: -8832468585942031159
+    second: Case & Artifact Spritesheet_18
+  - first:
+      213: 7995195564093303593
+    second: Case & Artifact Spritesheet_19
+  - first:
+      213: -7002379136369390561
+    second: Case & Artifact Spritesheet_20
+  - first:
+      213: -5566987839510241106
+    second: Case & Artifact Spritesheet_21
+  - first:
+      213: -7296864552454279541
+    second: Case & Artifact Spritesheet_22
+  - first:
+      213: 1158432671234676495
+    second: Case & Artifact Spritesheet_23
+  - first:
+      213: -4542719795917751788
+    second: Case & Artifact Spritesheet_24
+  - first:
+      213: -8381707155925714278
+    second: Case & Artifact Spritesheet_25
+  - first:
+      213: 5365087180437478900
+    second: Case & Artifact Spritesheet_26
+  - first:
+      213: -667697510036673933
+    second: Case & Artifact Spritesheet_27
+  - first:
+      213: -3476136508584033989
+    second: Case & Artifact Spritesheet_28
+  - first:
+      213: 6235412602174354046
+    second: Case & Artifact Spritesheet_29
+  - first:
+      213: 6611228614062023574
+    second: Case & Artifact Spritesheet_30
+  - first:
+      213: 1924934477096896214
+    second: Case & Artifact Spritesheet_31
+  - first:
+      213: -7502779434885362311
+    second: Case & Artifact Spritesheet_32
+  - first:
+      213: -4679801569688642430
+    second: Case & Artifact Spritesheet_33
+  - first:
+      213: -5723737624556525674
+    second: Case & Artifact Spritesheet_34
+  - first:
+      213: 7663008726338379511
+    second: Case & Artifact Spritesheet_35
+  - first:
+      213: -6270285159678801372
+    second: Case & Artifact Spritesheet_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 252
+        width: 87
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8e6f87d5a18c1d0800000000000000
+      internalID: -3330382935676753703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 252
+        width: 58
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53362764b5569e020800000000000000
+      internalID: 2371538121485607733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 252
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173371e7fd0139bf0800000000000000
+      internalID: -318892596533972111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 252
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e7c3d604fb12b1f0800000000000000
+      internalID: -1030730629813909528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 220
+        width: 83
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71bc893db409c7ce0800000000000000
+      internalID: -1406090328299484393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 220
+        width: 54
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dfef8ca437794f10800000000000000
+      internalID: 2254464156592762838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 220
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b700e00fa27ab72c0800000000000000
+      internalID: -4432765605358206853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 220
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb01af19acaea510800000000000000
+      internalID: 1562375963124239287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 145
+        width: 28
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0af5c309228afd0800000000000000
+      internalID: -2330574804280696591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 139
+        width: 24
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b98caf25a7a896f40800000000000000
+      internalID: 5722257059533736091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 152
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6cd0a197eda2a30800000000000000
+      internalID: 4191407014931187438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 148
+        width: 19
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0857ce77193df180800000000000000
+      internalID: -9080038500635027441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 171
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97500e967290dc690800000000000000
+      internalID: -7580392532910013063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 168
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0dbb4b8173a6270800000000000000
+      internalID: 8244462647106064578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 182
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b36f08a6899ee80800000000000000
+      internalID: -8148814467552625818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 180
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a378285c24f981cc0800000000000000
+      internalID: -3740064381400873158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 113
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a0959b8befff8c0800000000000000
+      internalID: -3963169077725689192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 113
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6775ef4fe4847c190800000000000000
+      internalID: -7942299913889622154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 113
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4e0251e94cc6580800000000000000
+      internalID: -8832468585942031159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 113
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b6f835104a4fe60800000000000000
+      internalID: 7995195564093303593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 113
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c8812964d82de90800000000000000
+      internalID: -7002379136369390561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 113
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0a21d1e061eb2b0800000000000000
+      internalID: -5566987839510241106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 111
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ea2d899545cba90800000000000000
+      internalID: -7296864552454279541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 56
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0756297064931010800000000000000
+      internalID: 1158432671234676495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 56
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41aff2af96405f0c0800000000000000
+      internalID: -4542719795917751788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 55
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ab2b7ffb13eab80800000000000000
+      internalID: -8381707155925714278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 90
+        width: 44
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd5afa7d5e947a40800000000000000
+      internalID: 5365087180437478900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 92
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ae9d8f6acdbb6f0800000000000000
+      internalID: -667697510036673933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 88
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b310517434842cfc0800000000000000
+      internalID: -3476136508584033989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 49
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e72b89c99b2a88650800000000000000
+      internalID: 6235412602174354046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 38
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693a01e856dcfbb50800000000000000
+      internalID: 6611228614062023574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 39
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6434b45bdb6ba10800000000000000
+      internalID: 1924934477096896214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 69
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d4d8bfad5c0e790800000000000000
+      internalID: -7502779434885362311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 68
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c946b54410e0fb0800000000000000
+      internalID: -4679801569688642430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 32
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69725c4c4f23190b0800000000000000
+      internalID: -5723737624556525674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe1e1416d9785a60800000000000000
+      internalID: 7663008726338379511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Case & Artifact Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 45
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a01f06ed87bf8a0800000000000000
+      internalID: -6270285159678801372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Case & Artifact Spritesheet_0: -3330382935676753703
+      Case & Artifact Spritesheet_1: 2371538121485607733
+      Case & Artifact Spritesheet_10: 4191407014931187438
+      Case & Artifact Spritesheet_11: -9080038500635027441
+      Case & Artifact Spritesheet_12: -7580392532910013063
+      Case & Artifact Spritesheet_13: 8244462647106064578
+      Case & Artifact Spritesheet_14: -8148814467552625818
+      Case & Artifact Spritesheet_15: -3740064381400873158
+      Case & Artifact Spritesheet_16: -3963169077725689192
+      Case & Artifact Spritesheet_17: -7942299913889622154
+      Case & Artifact Spritesheet_18: -8832468585942031159
+      Case & Artifact Spritesheet_19: 7995195564093303593
+      Case & Artifact Spritesheet_2: -318892596533972111
+      Case & Artifact Spritesheet_20: -7002379136369390561
+      Case & Artifact Spritesheet_21: -5566987839510241106
+      Case & Artifact Spritesheet_22: -7296864552454279541
+      Case & Artifact Spritesheet_23: 1158432671234676495
+      Case & Artifact Spritesheet_24: -4542719795917751788
+      Case & Artifact Spritesheet_25: -8381707155925714278
+      Case & Artifact Spritesheet_26: 5365087180437478900
+      Case & Artifact Spritesheet_27: -667697510036673933
+      Case & Artifact Spritesheet_28: -3476136508584033989
+      Case & Artifact Spritesheet_29: 6235412602174354046
+      Case & Artifact Spritesheet_3: -1030730629813909528
+      Case & Artifact Spritesheet_30: 6611228614062023574
+      Case & Artifact Spritesheet_31: 1924934477096896214
+      Case & Artifact Spritesheet_32: -7502779434885362311
+      Case & Artifact Spritesheet_33: -4679801569688642430
+      Case & Artifact Spritesheet_34: -5723737624556525674
+      Case & Artifact Spritesheet_35: 7663008726338379511
+      Case & Artifact Spritesheet_36: -6270285159678801372
+      Case & Artifact Spritesheet_4: -1406090328299484393
+      Case & Artifact Spritesheet_5: 2254464156592762838
+      Case & Artifact Spritesheet_6: -4432765605358206853
+      Case & Artifact Spritesheet_7: 1562375963124239287
+      Case & Artifact Spritesheet_8: -2330574804280696591
+      Case & Artifact Spritesheet_9: 5722257059533736091
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
