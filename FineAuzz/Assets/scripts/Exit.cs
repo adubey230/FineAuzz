@@ -35,4 +35,5 @@ public class Exit : MonoBehaviour
             Debug.Log("Hello");
             start = true;
         }
+    }
 }
