@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class EyeTimer : MonoBehaviour
 {
     [SerializeField] private Image uiFill;
+    [SerializeField] private Image Eye;
+    [SerializeField] private Sprite OpenEye;
+    [SerializeField] private Sprite ClosedEye;
     [SerializeField] private GameObject guard;
     public float blinkDuration;
     public float resetDuration;
@@ -24,6 +27,7 @@ public class EyeTimer : MonoBehaviour
         blinkDuration = guard.GetComponentInChildren<GuardLOS>().blinkTimerVal;
         resetDuration = guard.GetComponentInChildren<GuardLOS>().resetTimerVal;
         Being(blinkDuration);
+        Eye.sprite = OpenEye;
     }
 
     void Update(){
@@ -66,9 +70,11 @@ public class EyeTimer : MonoBehaviour
     private void OnEnd(){
         if(Closed){
             Closed = false;
+            Eye.sprite = OpenEye;
             Being(blinkDuration);
         }else{
             Closed = true;
+            Eye.sprite = ClosedEye;
             Being(resetDuration);
         }
     }
