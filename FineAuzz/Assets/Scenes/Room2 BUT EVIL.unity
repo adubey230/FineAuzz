@@ -1910,6 +1910,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Alarms
   source: {fileID: 0}
   clip: {fileID: 8300000, guid: 93b8e750c7c5a49dfa918750ef97f82c, type: 3}
+  bgAud: {fileID: 0}
+  newClip: {fileID: 0}
 --- !u!114 &845319089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1961,11 +1963,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5713229605337083806, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.51
+      value: 6.55
       objectReference: {fileID: 0}
     - target: {fileID: 5713229605337083806, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.39
+      value: -2.51
       objectReference: {fileID: 0}
     - target: {fileID: 5713229605337083806, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2392,7 +2394,6 @@ MonoBehaviour:
   scaler: {fileID: 7883680793182508654}
   blinkDuration: 0
   resetDuration: 0
-  offset: 60
   cam: {fileID: 519420031}
   rectTransform: {fileID: 2513290857322749935}
 --- !u!114 &1281776442
@@ -3862,7 +3863,6 @@ MonoBehaviour:
   scaler: {fileID: 7883680793182508654}
   blinkDuration: 0
   resetDuration: 0
-  offset: 60
   cam: {fileID: 519420031}
   rectTransform: {fileID: 2513290857322749935}
 --- !u!114 &8103262485740211086
