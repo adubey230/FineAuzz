@@ -809,7 +809,7 @@ GameObject:
   - component: {fileID: 421225370}
   m_Layer: 3
   m_Name: GettingCaught
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1470,8 +1470,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1086137668}
   - component: {fileID: 1086137667}
-  - component: {fileID: 1086137669}
-  - component: {fileID: 1086137670}
   m_Layer: 0
   m_Name: Guard
   m_TagString: Untagged
@@ -2486,7 +2484,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   playerTag: Player
-  detectionTimer: 60
+  detectionTimer: 15
   startingAngle: 215
   blinkTimerVal: 0
   resetTimerVal: 0
