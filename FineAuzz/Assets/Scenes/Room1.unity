@@ -1470,6 +1470,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1086137668}
   - component: {fileID: 1086137667}
+  - component: {fileID: 1086137669}
+  - component: {fileID: 1086137670}
   m_Layer: 0
   m_Name: Guard
   m_TagString: Untagged
