@@ -3378,6 +3378,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Alarms
   source: {fileID: 1826160066}
   clip: {fileID: 8300000, guid: 93b8e750c7c5a49dfa918750ef97f82c, type: 3}
+  bgAud: {fileID: 1534521965}
+  newClip: {fileID: 8300000, guid: 93884f014868f408e87ff4c9d3aef301, type: 3}
 --- !u!1 &1868545056
 GameObject:
   m_ObjectHideFlags: 0
