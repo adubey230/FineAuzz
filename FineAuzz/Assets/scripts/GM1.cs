@@ -5,6 +5,8 @@ public class GM1 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] EButton button;
     [SerializeField] GameObject ebutton;
+    [SerializeField] GameObject speech;
+    private bool beenOn = false;
     void Start()
     {
         
@@ -16,6 +18,17 @@ public class GM1 : MonoBehaviour
         if(button.hasBeenOpened)
         {
             ebutton.SetActive(false);
+
+            if(!beenOn)
+            {
+                speech.SetActive(true);
+                beenOn = true;
+            }
+
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                speech.SetActive(false);
+            }
         }
     }
 }
