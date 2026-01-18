@@ -32,7 +32,8 @@ public class Distraction : MonoBehaviour
             Debug.Log("crack");
             IsCracked = true;
             GetComponent<SpriteRenderer>().sprite = broken;
-            gameObject.SetActive(false);
+            gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            transform.localScale = new Vector3(1f, 1f, 1f);
         }
     }
 }
