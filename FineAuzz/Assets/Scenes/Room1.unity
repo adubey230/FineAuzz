@@ -667,6 +667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Exit
   exited: 0
   start: 0
+  scene: 2
   player: {fileID: 268423522}
 --- !u!61 &371159113
 BoxCollider2D:

@@ -7,6 +7,7 @@ public class Exit : MonoBehaviour
     public bool exited = false;
     private float timer = 1;
     public bool start = false;
+    public int scene;
     [SerializeField]public GameObject player;
     void Start()
     {
@@ -20,18 +21,18 @@ public class Exit : MonoBehaviour
             timer -= Time.deltaTime;
         }
         if(timer <= 0){
-            SceneManager.LoadScene("Room 2 Final");
+            SceneManager.LoadScene(scene + 1);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        TransitionType.SwitchType(true);
-        player.SetActive(false);
-        exited = true;
-        Debug.Log("Hello");
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
+            TransitionType.SwitchType(true);
+            player.SetActive(false);
+            exited = true;
+            Debug.Log("Hello");
             start = true;
         }
     }

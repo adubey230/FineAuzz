@@ -747,9 +747,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 371159107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bada132a215541ca91a1e75dfd1cdb5, type: 3}
+  m_Script: {fileID: 11500000, guid: 7316fff2ed6904fc38d1b9ed4424e6ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Exit1
+  exited: 0
+  start: 0
+  scene: 4
+  player: {fileID: 52671794}
 --- !u!1 &380132573
 GameObject:
   m_ObjectHideFlags: 0
