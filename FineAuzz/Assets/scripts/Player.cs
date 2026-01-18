@@ -92,7 +92,7 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {   
-        Debug.Log("plss");
+        //Debug.Log("plss");
         if(collider.CompareTag("case"))
         {
             Debug.Log("changed sorting order");
@@ -126,6 +126,6 @@ public class Player : MonoBehaviour
         inputPossible = false;
         rb.linearVelocity = new Vector2(0, 0);
         dead = true;
-        //TransitionType.SwitchType(false);
+        TransitionType.SwitchType(false);
     }
 }
