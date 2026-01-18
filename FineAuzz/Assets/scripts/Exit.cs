@@ -27,13 +27,12 @@ public class Exit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        TransitionType.SwitchType(true);
-        player.SetActive(false);
-        exited = true;
-        Debug.Log("Hello");
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
+            TransitionType.SwitchType(true);
+            player.SetActive(false);
+            exited = true;
+            Debug.Log("Hello");
             start = true;
         }
-    }
 }
