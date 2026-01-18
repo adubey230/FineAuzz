@@ -90,8 +90,10 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {   
+        Debug.Log("plss");
         if(collider.CompareTag("case"))
         {
+            Debug.Log("changed sorting order");
             sprite.sortingOrder = 2;
         }
         
