@@ -10,7 +10,7 @@ public class GuardMove : MonoBehaviour
 
     [SerializeField] private List<Vector2> patrolPoints;
     [SerializeField] private float moveSpeed = 2f;
-    [SerializeField] private float rotateSpeed = 360f;
+    [SerializeField] private float rotateSpeed = 30f;
     [SerializeField] private float waitTime = 1f;
 
     private float nextAngle;
@@ -60,14 +60,14 @@ public class GuardMove : MonoBehaviour
         while (Mathf.Abs(Mathf.DeltaAngle(currAngle, targetAngle)) > 0.5f)
         {
             float delta = Mathf.DeltaAngle(currAngle, targetAngle);
-            float step = Mathf.Sign(delta) * rotateSpeed * Time.deltaTime * 100;
+            float step = Mathf.Sign(delta) * rotateSpeed * Time.deltaTime;
 
             currAngle += step;
             currAngle = (currAngle + 360f) % 360f;
 
             guardLOS.IncrAimDirection(step);
 
-            UpdateSprite(currAngle);
+            // UpdateSprite(currAngle);
 
             yield return null;
         }

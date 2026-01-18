@@ -328,6 +328,7 @@ Transform:
   m_Children:
   - {fileID: 1120650819}
   - {fileID: 421225369}
+  - {fileID: 1290899558}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &268423527
@@ -443,12 +444,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2182,6 +2183,119 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.31225842, y: 0.14869131}
   m_EdgeRadius: 0
+--- !u!1 &1290899557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1290899558}
+  - component: {fileID: 1290899559}
+  m_Layer: 0
+  m_Name: glow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1290899558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290899557}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 268423525}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1290899559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290899557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.Light2D
+  m_ComponentVersion: 2
+  m_LightType: 1
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 1
+  m_Color: {r: 0.06543055, g: 1, b: 0.0047169924, a: 1}
+  m_Intensity: 3
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0.0046499968, y: 0.14324999, z: 0}
+    m_Extent: {x: 0.62725, y: 0.68605, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: 0.13080361, y: 0.12624176, z: 0}
+  - {x: 0.13231272, y: 0.15625194, z: 0}
+  - {x: 0.13036607, y: 0.19189577, z: 0}
+  - {x: 0.13033012, y: 0.22111616, z: 0}
+  - {x: 0.12264007, y: 0.25290933, z: 0}
+  - {x: 0.10924028, y: 0.2780574, z: 0}
+  - {x: 0.08050826, y: 0.30704576, z: 0}
+  - {x: 0.0495848, y: 0.32259655, z: 0}
+  - {x: 0.012980009, y: 0.32971486, z: 0}
+  - {x: -0.017092777, y: 0.32907283, z: 0}
+  - {x: -0.063359626, y: 0.31519228, z: 0}
+  - {x: -0.08878534, y: 0.29101264, z: 0}
+  - {x: -0.10515478, y: 0.26784524, z: 0}
+  - {x: -0.116794385, y: 0.23895086, z: 0}
+  - {x: -0.12088555, y: 0.20758595, z: 0}
+  - {x: -0.1217883, y: 0.1757953, z: 0}
+  - {x: -0.12203177, y: 0.138386, z: 0}
+  - {x: -0.1228423, y: 0.103789456, z: 0}
+  - {x: -0.119117245, y: 0.068732955, z: 0}
+  - {x: -0.11199892, y: 0.03655794, z: 0}
+  - {x: -0.10335406, y: 0.009197115, z: 0}
+  - {x: -0.0873102, y: -0.010925843, z: 0}
+  - {x: -0.0648053, y: -0.02613366, z: 0}
+  - {x: -0.041561108, y: -0.036418658, z: 0}
+  - {x: -0.018674446, y: -0.04173978, z: 0}
+  - {x: 0.006843305, y: -0.045339804, z: 0}
+  - {x: 0.041095477, y: -0.04260705, z: 0}
+  - {x: 0.06658376, y: -0.029544, z: 0}
+  - {x: 0.088898025, y: -0.009876611, z: 0}
+  - {x: 0.10400623, y: 0.010377621, z: 0}
+  - {x: 0.116612375, y: 0.03570335, z: 0}
+  - {x: 0.124358594, y: 0.064025335, z: 0}
+  - {x: 0.1288752, y: 0.09623187, z: 0}
 --- !u!1 &1543629803
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,8 +2679,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1762961209}
   - component: {fileID: 1762961212}
-  - component: {fileID: 1762961211}
   - component: {fileID: 1762961210}
+  - component: {fileID: 1762961213}
   m_Layer: 0
   m_Name: GuardLOS
   m_TagString: Untagged
@@ -2637,14 +2751,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1762961211
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762961208}
-  m_Mesh: {fileID: 0}
 --- !u!114 &1762961212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2661,11 +2767,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   playerTag: Player
+  detectionTimer: 15
   startingAngle: 215
   blinkTimerVal: 5.2
   resetTimerVal: 2
   blinkTimer: 0
   fov: 67.5
+--- !u!33 &1762961213
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762961208}
+  m_Mesh: {fileID: 0}
 --- !u!1 &1783986413
 GameObject:
   m_ObjectHideFlags: 0
@@ -2975,7 +3090,7 @@ RectTransform:
   m_GameObject: {fileID: 1986986429}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 833568783}
@@ -3006,7 +3121,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -2413806693520163455, guid: a192278687ddead498faf4efdf1ad2a7, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
