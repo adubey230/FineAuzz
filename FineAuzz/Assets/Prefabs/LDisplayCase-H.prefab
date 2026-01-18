@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6248043297885039160}
   m_Layer: 6
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 8671894411776723833}
   m_Layer: 6
   m_Name: Stand
-  m_TagString: Untagged
+  m_TagString: case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
