@@ -2432,7 +2432,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -10
-  m_Sprite: {fileID: -1652836266615750483, guid: fcaa984ad8b824c67b0e0e2f78ba23cd, type: 3}
+  m_Sprite: {fileID: -7090216823731903679, guid: 41a4a1e93f96d431a962a837c6589d45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4009,6 +4009,7 @@ MonoBehaviour:
   OpenEye: {fileID: -5377105961603527109, guid: 2b4daaa95c05b449aa25dc7f7c1add55, type: 3}
   ClosedEye: {fileID: 648952859124221828, guid: 902757751780a4cf59c6b44b3eaf6cd1, type: 3}
   guard: {fileID: 1086137666}
+  scaler: {fileID: 0}
   blinkDuration: 0
   resetDuration: 0
   offset: 60
