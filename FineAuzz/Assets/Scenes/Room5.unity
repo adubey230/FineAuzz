@@ -2664,6 +2664,7 @@ MonoBehaviour:
   ebutton: {fileID: 1260587875}
   speech: {fileID: 988965059}
   alarms: {fileID: 1863683732}
+  portrait: {fileID: 1949880464}
 --- !u!82 &1826160066
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3407,19 +3408,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7387400110374936421, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_ShapePath.Array.data[0].x
-      value: 0.09406817
+      value: 0.10405338
       objectReference: {fileID: 0}
     - target: {fileID: 7387400110374936421, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_ShapePath.Array.data[0].y
-      value: 0.13927695
+      value: 0.18103305
       objectReference: {fileID: 0}
     - target: {fileID: 7387400110374936421, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_ShapePath.Array.data[1].x
-      value: 0.10742712
+      value: 0.103796124
       objectReference: {fileID: 0}
     - target: {fileID: 7387400110374936421, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_ShapePath.Array.data[1].y
-      value: 0.17758225
+      value: 0.18121321
       objectReference: {fileID: 0}
     - target: {fileID: 7387400110374936421, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_ShapePath.Array.data[2].x
@@ -3647,11 +3648,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7387400110374936421, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_ShapePath.Array.data[32].x
-      value: 0.10754478
+      value: 0.1039139
       objectReference: {fileID: 0}
     - target: {fileID: 7387400110374936421, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_ShapePath.Array.data[32].y
-      value: 0.109267056
+      value: 0.12651414
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

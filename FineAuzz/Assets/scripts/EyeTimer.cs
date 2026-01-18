@@ -34,11 +34,10 @@ public class EyeTimer : MonoBehaviour
 
     void Update(){
 
-
-        Vector3 screenPos = cam.WorldToScreenPoint(guard.transform.position);
-        Vector3 finalPos = new Vector3(screenPos.x, screenPos.y + offset * scaler.scaleFactor, 0);
+        Vector3 screenPos = cam.WorldToScreenPoint(new Vector3(guard.transform.position.x, guard.transform.position.y + 1.3f, 0));
+        //Vector3 finalPos = new Vector3(screenPos.x, screenPos.y + offset, 0);
         // If using RectTransform:
-        GetComponent<RectTransform>().position = finalPos;
+        GetComponent<RectTransform>().position = screenPos;
 
         //transform.position = cam.ScreenToWorldPoint(new Vector3(guard.transform.position.x, guard.transform.position.y ));
         
