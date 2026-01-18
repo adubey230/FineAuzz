@@ -11,9 +11,9 @@ public class GuardMove : MonoBehaviour
     [SerializeField] public Animator animator;
 
     [SerializeField] private List<Vector2> patrolPoints;
-    [SerializeField] private float moveSpeed = 2f;
-    [SerializeField] private float rotateSpeed = 30f;
-    [SerializeField] private float waitTime = 1f;
+    [SerializeField] private float moveSpeed = 3f;
+    [SerializeField] private float rotateSpeed = 60f;
+    [SerializeField] private float waitTime = 0.5f;
 
     private float nextAngle;
     private float currAngle;
@@ -45,7 +45,6 @@ public class GuardMove : MonoBehaviour
 
             float delta = Mathf.DeltaAngle(startAngle, nextAngle);
             guardLOS.IncrAimDirection(delta);
-
             StartCoroutine(PatrolLoop());
         }
     }
