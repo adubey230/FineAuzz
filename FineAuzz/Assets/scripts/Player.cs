@@ -110,5 +110,4 @@ public class Player : MonoBehaviour
         inputPossible = false;
         rb.linearVelocity = new Vector2(0, 0);
     }
-
 }
