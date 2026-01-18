@@ -15,7 +15,7 @@ public class GuardLOS : MonoBehaviour
     private bool inVision = false;
     private bool beingDetected = false;
     [SerializeField, Range(0.0f, 10.0f)] public float blinkTimerVal;
-    [SerializeField, Range(0.0f, 2.0f)] public float resetTimerVal;
+    [SerializeField, Range(0.0f, 3.0f)] public float resetTimerVal;
     [SerializeField]private float blinkTimer;
     private float resetTimer;
     private bool runResetTimer = false;

@@ -439,6 +439,14 @@ PrefabInstance:
       value: 84.8
       objectReference: {fileID: 0}
     - target: {fileID: 628450914888416587, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
+      propertyPath: blinkTimerVal
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 628450914888416587, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
+      propertyPath: resetTimerVal
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 628450914888416587, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: startingAngle
       value: 351
       objectReference: {fileID: 0}
@@ -1962,7 +1970,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 628450914888416587, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: blinkTimerVal
-      value: 2.6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 628450914888416587, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: startingAngle

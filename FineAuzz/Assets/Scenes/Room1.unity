@@ -3553,6 +3553,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 628450914888416587, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
+      propertyPath: blinkTimerVal
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 628450914888416587, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
+      propertyPath: resetTimerVal
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 628450914888416587, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: startingAngle
       value: 186
       objectReference: {fileID: 0}
