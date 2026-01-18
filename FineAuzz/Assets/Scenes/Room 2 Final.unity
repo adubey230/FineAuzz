@@ -484,7 +484,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: patrolPoints.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
+      propertyPath: patrolPoints.Array.data[0].x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
+      propertyPath: patrolPoints.Array.data[0].y
+      value: -3.16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1800,9 +1808,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player
   animator: {fileID: 1302784176}
   sprite: {fileID: 1302784178}
+  button: {fileID: 0}
+  ebutton: {fileID: 0}
   speed: 3
   InRange: 0
   VaseCheck: 0
+  dead: 0
 --- !u!111 &1302784175
 Animation:
   m_ObjectHideFlags: 0

@@ -47,6 +47,10 @@ public class GuardMove : MonoBehaviour
             guardLOS.IncrAimDirection(delta);
             StartCoroutine(PatrolLoop());
         }
+        else
+        {
+            UpdateSprite(startAngle);
+        }
     }
 
     private void Update()
@@ -59,6 +63,10 @@ public class GuardMove : MonoBehaviour
         int nextIndex = 1;
         while (true)
         {
+            while (guardLOS.blinking)
+            {
+                yield return null;
+            }
             yield return new WaitForSeconds(waitTime);
             nextIndex = (currIndex + 1) % patrolPoints.Count;
             Vector2 nextPos = patrolPoints[nextIndex];
@@ -80,6 +88,11 @@ public class GuardMove : MonoBehaviour
 
         while (Mathf.Abs(Mathf.DeltaAngle(currAngle, targetAngle)) > 0.5f)
         {
+            while (guardLOS.blinking)
+            {
+                yield return null;
+            }
+
             float delta = Mathf.DeltaAngle(currAngle, targetAngle);
             float step = Mathf.Sign(delta) * rotateSpeed * Time.deltaTime;
 
