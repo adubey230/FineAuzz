@@ -2004,6 +2004,11 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.34836507, y: 0.09948309}
   m_EdgeRadius: 0
+--- !u!1 &811481470 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3298978698073728660, guid: ac521044f8dde4ed297be6ecc8f9f438, type: 3}
+  m_PrefabInstance: {fileID: 1932590870}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &843928075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2647,7 +2652,7 @@ PrefabInstance:
     - target: {fileID: 3447216206775627176, guid: b8ff89b832dbb4421a5b1f99b1bfdd31, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -4542719795917751788, guid: 5d253cc8219a94189a4787cfff3b1583, type: 3}
+      objectReference: {fileID: 6611228614062023574, guid: 5d253cc8219a94189a4787cfff3b1583, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3304,6 +3309,10 @@ PrefabInstance:
       propertyPath: guard
       value: 
       objectReference: {fileID: 1849935340}
+    - target: {fileID: 2199490737391291173, guid: cfa958b2f479d34439c4cb127f83f5ee, type: 3}
+      propertyPath: exit
+      value: 
+      objectReference: {fileID: 811481470}
     - target: {fileID: 5236425219143322841, guid: cfa958b2f479d34439c4cb127f83f5ee, type: 3}
       propertyPath: cam
       value: 
