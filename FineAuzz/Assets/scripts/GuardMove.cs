@@ -2,7 +2,6 @@ using NUnit.Framework;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Tilemaps;
 
 public class GuardMove : MonoBehaviour
 {
