@@ -14,7 +14,7 @@ TagManager:
   - BlocksLOS
   - Water
   - UI
-  - 
+  - collisionLayer
   - 
   - 
   - 
