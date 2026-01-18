@@ -14,7 +14,7 @@ public class EyeTimer : MonoBehaviour
     public float blinkDuration;
     public float resetDuration;
 
-    [SerializeField] public float offset;
+    private float offset = 2.7f;
     public Camera cam;
     private float remainingDur;
 
@@ -33,8 +33,8 @@ public class EyeTimer : MonoBehaviour
     }
 
     void Update(){
-
-        Vector3 screenPos = cam.WorldToScreenPoint(new Vector3(guard.transform.position.x, guard.transform.position.y + 1.3f, 0));
+        Debug.Log(offset);
+        Vector3 screenPos = cam.WorldToScreenPoint(new Vector3(guard.transform.position.x, guard.transform.position.y + offset, 0));
         //Vector3 finalPos = new Vector3(screenPos.x, screenPos.y + offset, 0);
         // If using RectTransform:
         GetComponent<RectTransform>().position = screenPos;
