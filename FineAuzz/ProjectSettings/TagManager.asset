@@ -9,6 +9,7 @@ TagManager:
   - Guard
   - Vase
   - Anim
+  - Canvas
   layers:
   - Default
   - TransparentFX

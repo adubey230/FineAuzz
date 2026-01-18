@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class slide : MonoBehaviour
 {
@@ -11,7 +12,9 @@ public class slide : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        if(!TransitionType.getType()){
+            this.gameObject.GetComponent<Image>().enabled = false;
+        }
     }
 
     // Update is called once per frame
@@ -29,6 +32,7 @@ public class slide : MonoBehaviour
         }
 
         if(exit.GetComponent<Exit>().exited){
+            this.gameObject.GetComponent<Image>().enabled = true;
             animator.SetBool("Exit", true);
         }
     }
