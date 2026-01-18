@@ -4076,7 +4076,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 628450914888416587, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: startingAngle
-      value: 220
+      value: 186
       objectReference: {fileID: 0}
     - target: {fileID: 1010217647980752755, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: m_Name
