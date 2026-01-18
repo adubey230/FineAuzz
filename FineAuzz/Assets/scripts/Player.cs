@@ -10,7 +10,6 @@ public class Player : MonoBehaviour
     public float speed = 5f;
     public bool InRange = false;
     public bool VaseCheck = false;
-    private bool playerIsMoving = false;
     private Rigidbody2D rb;
     private Distraction vase;
     public static event Action<Distraction> DestroyVase;

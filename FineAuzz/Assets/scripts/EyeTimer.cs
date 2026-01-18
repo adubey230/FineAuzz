@@ -67,15 +67,21 @@ public class EyeTimer : MonoBehaviour
         OnEnd();
     }
 
+    private bool wasShocked = false;
     private void OnEnd(){
         if(Closed){
             Closed = false;
             Eye.sprite = OpenEye;
             Being(blinkDuration);
+            guard.GetComponent<GuardMove>().animator.SetBool("closed", false);
+            guard.GetComponent<GuardMove>().animator.SetBool("shocked", wasShocked);
         }else{
             Closed = true;
             Eye.sprite = ClosedEye;
             Being(resetDuration);
+            guard.GetComponent<GuardMove>().animator.SetBool("closed", true);
+            wasShocked = guard.GetComponent<GuardMove>().animator.GetBool("shocked");
+            guard.GetComponent<GuardMove>().animator.SetBool("shocked", false);
         }
     }
 }
