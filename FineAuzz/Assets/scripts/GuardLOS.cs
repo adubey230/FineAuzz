@@ -7,7 +7,7 @@ public class GuardLOS : MonoBehaviour
 {
     [SerializeField] private LayerMask layerMask;
     [SerializeField] private string playerTag = "Player";
-    [SerializeField] private int detectionTimer = 60;
+    [SerializeField] private static int detectionTimer = 15;
     private Mesh mesh;
     Vector3 origin;
     [SerializeField, Range(0.0f, 360.0f)] public float startingAngle;
