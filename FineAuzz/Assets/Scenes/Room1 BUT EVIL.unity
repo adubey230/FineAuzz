@@ -3086,7 +3086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Audio
   source: {fileID: 1473175549}
-  clip: {fileID: 8300000, guid: 7033bfefba206403594bc3c7d8cd16a1, type: 3}
+  clip: {fileID: 8300000, guid: 93884f014868f408e87ff4c9d3aef301, type: 3}
 --- !u!82 &1473175549
 AudioSource:
   m_ObjectHideFlags: 0
