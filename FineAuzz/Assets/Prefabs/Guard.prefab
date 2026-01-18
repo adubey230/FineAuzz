@@ -128,8 +128,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.3799999, y: 3.0599997}
+  m_Offset: {x: 0, y: 1.5371016}
+  m_Size: {x: 1.3799999, y: 3.0487375}
   m_Direction: 0
 --- !u!95 &7091029649157404861
 Animator:
@@ -228,6 +228,7 @@ MonoBehaviour:
   blinkTimerVal: 5.2
   resetTimerVal: 2
   blinkTimer: 0
+  blinking: 0
   fov: 67.5
 --- !u!23 &8996112912682599570
 MeshRenderer:
