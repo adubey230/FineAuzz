@@ -7,10 +7,10 @@ public class GuardLOS : MonoBehaviour
 {
     [SerializeField] private LayerMask layerMask;
     [SerializeField] private string playerTag = "Player";
-    [SerializeField] private int detectionTimer = 60;
+    [SerializeField] private static int detectionTimer = 15;
     private Mesh mesh;
     Vector3 origin;
-    [SerializeField, Range(0.0f, 360.0f)] private float startingAngle;
+    [SerializeField, Range(0.0f, 360.0f)] public float startingAngle;
     private float angle;
     private bool inVision = false;
     private bool beingDetected = false;
@@ -40,7 +40,7 @@ public class GuardLOS : MonoBehaviour
         inVision = false;
 
         if (!blinking){
-        int rayCount = 100;
+        int rayCount = 2000;
         float angle = startingAngle;
         float angleIncrease = fov / rayCount;
         float viewDistance = 50f;
