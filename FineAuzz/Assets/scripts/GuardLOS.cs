@@ -30,7 +30,7 @@ public class GuardLOS : MonoBehaviour
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
         origin = Vector3.zero;
-        startingAngle += fov / 2;
+        //startingAngle += fov / 2;
         blinkTimer = blinkTimerVal;
         resetTimer = resetTimerVal;
         audioSource = GetComponent<AudioSource>();

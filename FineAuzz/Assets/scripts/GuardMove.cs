@@ -28,7 +28,7 @@ public class GuardMove : MonoBehaviour
         transform.position = patrolPoints[0];
         guardLOS = GetComponentInChildren<GuardLOS>();
 
-        startAngle = guardLOS.startingAngle;
+        startAngle = guardLOS.startingAngle += guardLOS.fov / 2;
 
         if (startAngle < 0) startAngle += 360;
 
