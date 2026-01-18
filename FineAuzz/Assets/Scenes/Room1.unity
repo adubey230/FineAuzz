@@ -796,7 +796,6 @@ MonoBehaviour:
   animator: {fileID: 268423529}
   sprite: {fileID: 268423524}
   speed: 3
-  shockedSprite: {fileID: -3924190032742187860, guid: f8c1d3ef027e04dba8bf58b50e860476, type: 3}
 --- !u!114 &371159111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1417,6 +1416,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1086137668}
   - component: {fileID: 1086137667}
+  - component: {fileID: 1086137669}
+  - component: {fileID: 1086137670}
   m_Layer: 0
   m_Name: Guard
   m_TagString: Untagged
@@ -1498,6 +1499,38 @@ Transform:
   - {fileID: 1762961209}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -0.8, y: 0, z: 0}
+--- !u!114 &1086137669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086137666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8be62638a290524692a78b56dac4fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GuardMove
+  guardLOS: {fileID: 1762961212}
+  patrolPoints:
+  - {x: 5, y: -0.5}
+  - {x: -5, y: -0.5}
+--- !u!114 &1086137670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086137666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8be62638a290524692a78b56dac4fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GuardMove
+  guardLOS: {fileID: 1762961212}
+  patrolPoints:
+  - {x: 5, y: -0.5}
+  - {x: -5, y: -0.5}
 --- !u!1 &1178451106
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class GuardMove : MonoBehaviour
 
     [SerializeField] private List<Vector2> patrolPoints;
     [SerializeField] private static float guardSpeed = 1f;
-    [SerializeField] private static float rotateSpeed = -1f;
+    [SerializeField] private static float rotateSpeed = 1f;
 
     private float nextAngle;
     private float currAngle;
@@ -17,6 +17,9 @@ public class GuardMove : MonoBehaviour
     private int currIndex;
 
     private bool isMoving = false;
+
+    Vector2 currentPos;
+    Vector2 nextPos;
     void Start()
     {
         this.transform.position = patrolPoints[0];
@@ -35,36 +38,43 @@ public class GuardMove : MonoBehaviour
     private void NextPoint()
     {
         // get current location
-        Vector2 currentPos = patrolPoints[currIndex];
+        currentPos = patrolPoints[currIndex];
 
         // increment index, accounting for overflow
         currIndex++;
         if (currIndex >= patrolPoints.Count) currIndex = 0;
 
         // get next location
-        Vector2 nextPos = patrolPoints[currIndex];
-
-        // calculate distance
-        distance = Vector2.Distance(currentPos, nextPos);
-
-        // calculate angle between vectors
-        nextAngle = Vector2.SignedAngle(currentPos, nextPos);
+        nextPos = patrolPoints[currIndex];
 
         StartCoroutine(RotateGuard());
     }
 
     private IEnumerator RotateGuard()
     {
-        Debug.Log(nextAngle + " " + currAngle);
-        for (float i = (Mathf.Abs(nextAngle - currAngle)) / rotateSpeed; i >= 0; i-= 1)
+        Vector2 direction = (nextPos - currentPos).normalized;
+
+        float targetAngle =
+            Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+        targetAngle /= 2;
+
+        if (targetAngle < 0) targetAngle += 360f;
+
+        while (Mathf.Abs(Mathf.DeltaAngle(currAngle, targetAngle)) > 0.5f)
         {
-            // rotate the vision cone
-            guardLOS.IncrAimDirection(rotateSpeed);
-            // rotate the guard
+            float delta = Mathf.DeltaAngle(currAngle, targetAngle);
+
+            float step = Mathf.Sign(delta) * rotateSpeed;
+
+            currAngle += step;
+            guardLOS.IncrAimDirection(step);
+
             yield return new WaitForSeconds(0.016f);
         }
-        yield return new WaitForSeconds(1f);
-        //StartCoroutine(MoveGuard());
+
+        currAngle = targetAngle;
+        // StartCoroutine(MoveGuard());
     }
 
     private IEnumerator MoveGuard()
@@ -79,14 +89,9 @@ public class GuardMove : MonoBehaviour
         }
 
     }
-
-    private Vector3 AngleToVector3XY(float angleInDegrees)
+    public static Vector3 DegreeToVector3(float degree)
     {
-        float angleInRadians = angleInDegrees * Mathf.Deg2Rad;
-
-        float x = Mathf.Cos(angleInRadians);
-        float y = Mathf.Sin(angleInRadians);
-
-        return new Vector3(x, y, 0f).normalized;
+        float radian = degree * Mathf.Deg2Rad;
+        return new Vector3(Mathf.Cos(radian), Mathf.Sin(radian));
     }
 }

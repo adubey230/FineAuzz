@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     private GameObject[] guards;
     [SerializeField] Distraction vase;
 
+    private Player player = FindFirstObjectByType<Player>();
+
     private string currentScene;
 
     private void OnEnable()
