@@ -8,7 +8,8 @@ public class Player : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] SpriteRenderer sprite;
     public float speed = 5f;
-    private bool InRange = false;
+    public bool InRange = false;
+    public bool VaseCheck = false;
     private bool playerIsMoving = false;
     private Rigidbody2D rb;
     private Distraction vase;
@@ -20,9 +21,18 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    void Update(){
+        if(Input.GetKeyDown(KeyCode.F) && InRange){
+                Debug.Log("KMS");
+                DestroyVase?.Invoke(vase);
+        }
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
+        
+
         if (inputPossible)
         {
             float horizontal = Input.GetAxis("Horizontal");
@@ -32,12 +42,13 @@ public class Player : MonoBehaviour
 
             rb.linearVelocity = movement * speed;
 
-            if(Input.GetKeyDown(KeyCode.F) && InRange){
-                DestroyVase?.Invoke(vase);
-            }
-
             //animator.SetBool("is_walk_front", movement.magnitude > 0);
             Animations();
+        }
+        if(vase != null){
+            VaseCheck = true;
+        }else{
+            VaseCheck = false;
         }
     }
 
@@ -95,8 +106,9 @@ public class Player : MonoBehaviour
     {
         if(collider.tag == "Vase"){
             InRange = false;
+            vase = null;
         }
-        vase = null;
+        
 
         if(collider.CompareTag("case"))
         {
