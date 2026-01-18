@@ -67,6 +67,8 @@ public class GuardMove : MonoBehaviour
 
             guardLOS.IncrAimDirection(step);
 
+            UpdateSprite(currAngle);
+
             yield return null;
         }
 
@@ -92,9 +94,8 @@ public static Vector3 DegreeToVector3(float degree)
         return new Vector3(Mathf.Cos(radian), Mathf.Sin(radian));
     }
 
-    private void setSprite(float angle)
+    private void UpdateSprite(float angle)
     {
-        
         if ((45 >= angle && angle >= 0) || (360 > angle && angle > 315))
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
