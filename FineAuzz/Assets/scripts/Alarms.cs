@@ -8,7 +8,6 @@ public class Alarms : MonoBehaviour
     void Start()
     {
         source.clip = clip;
-        source.loop = true;
         source.Play();
     }
 
