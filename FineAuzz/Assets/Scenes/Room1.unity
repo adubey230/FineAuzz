@@ -3297,6 +3297,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1897858201515769685, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 74.4252
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897858201515769685, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -565
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897858201515769685, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -123
+      objectReference: {fileID: 0}
     - target: {fileID: 5713229605337083806, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.33
@@ -3341,6 +3353,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 7031422342187984941, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031422342187984941, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3377,6 +3397,10 @@ PrefabInstance:
     - target: {fileID: 7273604864017087778, guid: cfa958b2f479d34439c4cb127f83f5ee, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273604864017087778, guid: cfa958b2f479d34439c4cb127f83f5ee, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8443105592374127841, guid: cfa958b2f479d34439c4cb127f83f5ee, type: 3}
       propertyPath: m_Pivot.x
