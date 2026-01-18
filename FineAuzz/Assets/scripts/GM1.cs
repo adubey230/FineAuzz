@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class GM1 : MonoBehaviour
 {
@@ -7,34 +8,42 @@ public class GM1 : MonoBehaviour
     [SerializeField] GameObject ebutton;
     [SerializeField] GameObject speech;
     [SerializeField] GameObject alarms;
-    private bool beenOn = false;
-    void Start()
-    {
-        
-    }
+    [SerializeField] GameObject portrait;
+    private bool off = false;
 
-    // Update is called once per frame
     void Update()
     {
-        if(button.hasBeenOpened)
-        {
+        if (!button.hasBeenOpened) return;
+
+        // Disable E button once
+        if (ebutton.activeInHierarchy)
             ebutton.SetActive(false);
-            if(!button.open)
-            {
-                alarms.SetActive(true);
-                speech.SetActive(true);
-            }
 
-            if(!beenOn)
+        // Show alarms + speech
+        if (!button.open)
+        {
+            alarms.SetActive(true);
+
+            if (!off)
             {
                 speech.SetActive(true);
-                beenOn = true;
-            }
-
-            if(Input.GetKeyDown(KeyCode.E))
-            {
-                speech.SetActive(false);
+                off = true;
+                StartCoroutine(CloseSpeechAfterSeconds(3f));
             }
         }
+
+        // Handle closing caption
+        // if (off && Input.GetKeyDown(KeyCode.E) && !portrait.activeSelf)
+        // {
+        //     speech.SetActive(false);
+        //     //off = true;
+        // }
     }
+
+    private IEnumerator CloseSpeechAfterSeconds(float seconds)
+        {
+            yield return new WaitForSeconds(seconds);
+            speech.SetActive(false);
+        }
 }
+
