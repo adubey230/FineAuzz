@@ -7,10 +7,11 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] Animator animator;
     [SerializeField] SpriteRenderer sprite;
+    [SerializeField] EButton button;
+    [SerializeField] GameObject ebutton;
     public float speed = 5f;
     public bool InRange = false;
     public bool VaseCheck = false;
-    private bool playerIsMoving = false;
     private Rigidbody2D rb;
     private Distraction vase;
     public static event Action<Distraction> DestroyVase;
