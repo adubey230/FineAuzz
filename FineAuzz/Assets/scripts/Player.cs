@@ -27,11 +27,6 @@ public class Player : MonoBehaviour
                 Debug.Log("KMS");
                 DestroyVase?.Invoke(vase);
         }
-
-        if(button.hasBeenOpened)
-        {
-            ebutton.SetActive(false);
-        }
     }
 
     // Update is called once per frame
@@ -39,7 +34,7 @@ public class Player : MonoBehaviour
     {
         
 
-        if (inputPossible && !button.open)
+        if (inputPossible)
         {
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
