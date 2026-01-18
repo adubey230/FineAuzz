@@ -6,6 +6,7 @@ public class GM1 : MonoBehaviour
     [SerializeField] EButton button;
     [SerializeField] GameObject ebutton;
     [SerializeField] GameObject speech;
+    [SerializeField] GameObject alarms;
     private bool beenOn = false;
     void Start()
     {
@@ -18,6 +19,11 @@ public class GM1 : MonoBehaviour
         if(button.hasBeenOpened)
         {
             ebutton.SetActive(false);
+            if(!button.open)
+            {
+                alarms.SetActive(true);
+                speech.SetActive(true);
+            }
 
             if(!beenOn)
             {
