@@ -1050,6 +1050,7 @@ GameObject:
   - component: {fileID: 355263222}
   - component: {fileID: 371159109}
   - component: {fileID: 371159110}
+  - component: {fileID: 371159111}
   m_Layer: 6
   m_Name: exit
   m_TagString: Untagged
@@ -1110,11 +1111,27 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371159107}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bb37997a99eb431a8cdfe87ad0d2810, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Exit3
+--- !u!114 &371159111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371159107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7316fff2ed6904fc38d1b9ed4424e6ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Exit
+  exited: 0
+  start: 0
+  scene: 3
+  player: {fileID: 1556667681}
 --- !u!1 &380132573
 GameObject:
   m_ObjectHideFlags: 0
@@ -3715,6 +3732,11 @@ PrefabInstance:
 --- !u!4 &1556667680 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5412917084039824032, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
+  m_PrefabInstance: {fileID: 1556667679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1556667681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2905887993178327046, guid: 767f6a84b9c3e411f905d74523f5c26d, type: 3}
   m_PrefabInstance: {fileID: 1556667679}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1586332664
