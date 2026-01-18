@@ -47,6 +47,10 @@ public class GuardMove : MonoBehaviour
             guardLOS.IncrAimDirection(delta);
             StartCoroutine(PatrolLoop());
         }
+        else
+        {
+            UpdateSprite(startAngle);
+        }
     }
 
     private void Update()

@@ -25,7 +25,7 @@ public class Exit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        TransitionType.SwitchType(true);
+        //TransitionType.SwitchType(true);
         exited = true;
         Debug.Log("Hello");
         if(other.CompareTag("Player"))

@@ -126,6 +126,6 @@ public class Player : MonoBehaviour
         inputPossible = false;
         rb.linearVelocity = new Vector2(0, 0);
         dead = true;
-        TransitionType.SwitchType(false);
+        //TransitionType.SwitchType(false);
     }
 }
