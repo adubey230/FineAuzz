@@ -2084,7 +2084,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 3631527803939153358, guid: eb73544a481b343dd8ae42467a438361, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3462,7 +3462,7 @@ MonoBehaviour:
   guard: {fileID: 1086137666}
   blinkDuration: 0
   resetDuration: 0
-  offset: 130
+  offset: 60
   cam: {fileID: 519420031}
   rectTransform: {fileID: 279175979}
 --- !u!1 &2046712066
