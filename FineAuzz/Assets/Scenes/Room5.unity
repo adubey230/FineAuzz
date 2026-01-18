@@ -1887,11 +1887,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2396438125814704932, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.01
+      value: -5.51
       objectReference: {fileID: 0}
     - target: {fileID: 2396438125814704932, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.28
+      value: -1.39
       objectReference: {fileID: 0}
     - target: {fileID: 2396438125814704932, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1927,19 +1927,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: patrolPoints.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: patrolPoints.Array.data[0].x
-      value: 3.01
+      value: 4.46
       objectReference: {fileID: 0}
     - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: patrolPoints.Array.data[0].y
-      value: -3.28
+      value: -2.12
       objectReference: {fileID: 0}
     - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: patrolPoints.Array.data[1].x
-      value: -3.32
+      value: 3.01
       objectReference: {fileID: 0}
     - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: patrolPoints.Array.data[1].y
@@ -1947,18 +1947,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: patrolPoints.Array.data[2].x
-      value: -5.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
-      propertyPath: patrolPoints.Array.data[2].y
-      value: -1.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
-      propertyPath: patrolPoints.Array.data[3].x
       value: -3.32
       objectReference: {fileID: 0}
     - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
+      propertyPath: patrolPoints.Array.data[2].y
+      value: -3.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
+      propertyPath: patrolPoints.Array.data[3].x
+      value: -5.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: patrolPoints.Array.data[3].y
+      value: -1.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
+      propertyPath: patrolPoints.Array.data[4].x
+      value: -5.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
+      propertyPath: patrolPoints.Array.data[4].y
+      value: -1.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
+      propertyPath: patrolPoints.Array.data[5].x
+      value: -3.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
+      propertyPath: patrolPoints.Array.data[5].y
       value: -3.28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2098,7 +2114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: patrolPoints.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: patrolPoints.Array.data[0].x
@@ -2126,11 +2142,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: patrolPoints.Array.data[3].x
-      value: 3.19
+      value: 5.53
       objectReference: {fileID: 0}
     - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
       propertyPath: patrolPoints.Array.data[3].y
-      value: 3.14
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
+      propertyPath: patrolPoints.Array.data[4].x
+      value: 3.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5620526657219767359, guid: bb29f1a44c4ed4f42bff0d7377e87304, type: 3}
+      propertyPath: patrolPoints.Array.data[4].y
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
