@@ -23,6 +23,7 @@ public class GuardLOS : MonoBehaviour
     [SerializeField, Range(0.0f, 180.0f)] public float fov = 67.5f;
     private float rotateSpeed = 100.0f;
 
+    private AudioSource audioSource;
     public static event Action<GuardLOS> PlayerDetected;
     void Start()
     {
@@ -32,7 +33,7 @@ public class GuardLOS : MonoBehaviour
         startingAngle += fov / 2;
         blinkTimer = blinkTimerVal;
         resetTimer = resetTimerVal;
-
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -41,8 +42,8 @@ public class GuardLOS : MonoBehaviour
         inVision = false;
 
         if (!blinking){
-        int rayCount = 1000;
-        float angle = startingAngle;
+        int rayCount = 500;
+        float angle = startingAngle + fov / 2f;
         float angleIncrease = fov / rayCount;
         float viewDistance = 50f;
 
@@ -108,12 +109,15 @@ public class GuardLOS : MonoBehaviour
         }
 
         blinkTimer-=Time.deltaTime;
-        if(blinkTimer <= 0.0f){
+        if(blinkTimer <= 0.0f && !blinking){
+
+            audioSource.Play();
             blink();
         }
         if(runResetTimer){
             resetTimer -=Time.deltaTime;
-            if(resetTimer <= 0){
+            
+            if (resetTimer <= 0){
                 runResetTimer = false;
                 blinking = false;
                 resetTimer = resetTimerVal;

@@ -7,18 +7,18 @@ using UnityEditor.Tilemaps;
 public class GuardMove : MonoBehaviour
 {
     [SerializeField] private GuardLOS guardLOS;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] public Animator animator;
 
     [SerializeField] private List<Vector2> patrolPoints;
-    [SerializeField] private float moveSpeed = 2f;
-    [SerializeField] private float rotateSpeed = 30f;
-    [SerializeField] private float waitTime = 1f;
+    [SerializeField] private float moveSpeed = 3f;
+    [SerializeField] private float rotateSpeed = 60f;
+    [SerializeField] private float waitTime = 0.5f;
 
     private float nextAngle;
     private float currAngle;
-    private float distance;
     private int currIndex;
 
-    private bool isMoving = false;
     private float startAngle;
 
     Vector2 currentPos;
@@ -41,20 +41,26 @@ public class GuardMove : MonoBehaviour
                 Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
             if (targetAngle < 0) targetAngle += 360f;
+            if (targetAngle > 360) targetAngle -= 360f;
 
             float delta = Mathf.DeltaAngle(startAngle, nextAngle);
             guardLOS.IncrAimDirection(delta);
-
             StartCoroutine(PatrolLoop());
         }
     }
 
+    private void Update()
+    {
+        animator.SetLayerWeight(1, animator.GetBool("shocked") ? 1f : 0f);
+        animator.SetLayerWeight(2, animator.GetBool("closed") ? 1f : 0f);
+    }
     private IEnumerator PatrolLoop()
     {
+        int nextIndex = 1;
         while (true)
         {
             yield return new WaitForSeconds(waitTime);
-            int nextIndex = (currIndex + 1) % patrolPoints.Count;
+            nextIndex = (currIndex + 1) % patrolPoints.Count;
             Vector2 nextPos = patrolPoints[nextIndex];
 
             yield return RotateToFace(nextPos);
@@ -82,16 +88,19 @@ public class GuardMove : MonoBehaviour
 
             guardLOS.IncrAimDirection(step);
 
-            // UpdateSprite(currAngle);
+            UpdateSprite(currAngle);
 
             yield return null;
         }
 
         currAngle = targetAngle;
+        UpdateSprite(currAngle);
     }
 
     private IEnumerator MoveTo(Vector2 targetPos)
     {
+        animator.SetBool("moving", true);
+
         while (Vector2.Distance(transform.position, targetPos) > 0.05f)
         {
             Vector2 dir = (targetPos - (Vector2)transform.position).normalized;
@@ -102,6 +111,7 @@ public class GuardMove : MonoBehaviour
         }
 
         transform.position = targetPos;
+        animator.SetBool("moving", false);
     }
 public static Vector3 DegreeToVector3(float degree)
     {
@@ -111,21 +121,31 @@ public static Vector3 DegreeToVector3(float degree)
 
     private void UpdateSprite(float angle)
     {
+        // up
         if ((45 >= angle && angle >= 0) || (360 > angle && angle > 315))
         {
-            transform.eulerAngles = new Vector3(0, 0, 0);
+            animator.SetFloat("Vertical", 0f);
+            animator.SetFloat("Horizontal", 1f);
+            spriteRenderer.flipX = false;
         }
+        // left?
         else if (135 >= angle && angle > 45)
         {
-            transform.eulerAngles = new Vector3(0, 0, 90);
+            animator.SetFloat("Vertical", 1f);
+            animator.SetFloat("Horizontal", 0f);
         }
+        // down
         else if (225 >= angle && angle > 135)
         {
-            transform.eulerAngles = new Vector3(0, 0, 180);
+            animator.SetFloat("Vertical", 0f);
+            animator.SetFloat("Horizontal", -1f);
+            spriteRenderer.flipX = true;
         }
+        // right?
         else if (315 > angle && angle > 225)
         {
-            transform.eulerAngles = new Vector3(0, 0, 270);
+            animator.SetFloat("Vertical", -1f);
+            animator.SetFloat("Horizontal", 0f);
         }
     }
 }
